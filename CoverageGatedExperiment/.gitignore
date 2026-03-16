@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+
+runtime/cache/*.json
+runtime/results/
+runtime/data/
+
+.env
+/tests/*
+/temp/*

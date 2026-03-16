@@ -1,0 +1,33 @@
+[project]
+name = "rl-based-temporal-prevention"
+version = "0.1.0"
+description = "RL-based post-training for temporal knowledge leakage prevention in LLM backtesting"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "beautifulsoup4>=4.14.3",
+    "chz>=0.4.0",
+    "html5lib>=1.1",
+    "lxml>=6.0.2",
+    "matplotlib>=3.10.8",
+    "numpy>=2.0.0",
+    "openai>=2.21.0",
+    "pandas>=3.0.0",
+    "python-dotenv>=1.2.1",
+    "requests>=2.32.5",
+    "scipy>=1.17.0",
+    "tinker>=0.13.1",
+    "tinker-cookbook",
+    "torch>=2.10.0",
+    "yfinance>=1.1.0",
+    "trl>=0.16.0",
+    "vllm>=0.17.0",
+    "peft>=0.15.0",
+    "accelerate>=1.0.0",
+    "pydantic>=2.8.0",
+    "pyyaml>=6.0.0",
+    "datasets",
+]
+
+[tool.uv.sources]
+tinker-cookbook = { path = "../tinker-cookbook", editable = true }

@@ -1,0 +1,51 @@
+model_name: "Qwen/Qwen3-30B-A3B"
+renderer_name: "qwen3_disable_thinking"
+lora_rank: 32
+
+group_size: 12
+batch_size: 8
+num_epochs: 1
+
+learning_rate: 2.0e-5
+max_tokens: 8192
+temperature: 0.6
+
+clip_low: 0.9
+clip_high: 2.0
+
+w_leak_start: 0.95
+w_leak_end: 0.80
+lambda_base: 0.5
+
+format_margin: 1.0
+z_clip: 5.0
+
+w_perf_clean: 0.40
+cov_target: 0.80
+cov_floor: 0.20
+w_cov_leak: 0.05
+
+train_tasks: "stock,salary,legal"
+val_fraction: 0.10
+data_seed: 42
+
+judge_model: "google/gemini-3-flash-preview"
+search_model: "perplexity/sonar"
+
+num_validations: 15
+log_dir: "runtime/results/qwen3_30b/train_default"
+data_root: "runtime/data"
+concurrent_workers: 4
+
+# v4: quality gates
+hall_floor: 0.3
+ev_target: 8
+reason_target: 120
+w_quality_leak: 0.02
+
+# v4: loss function
+loss_fn: "ppo"
+
+# v4: KL regularization
+kl_penalty_coef: 0.05
+kl_discount_factor: 0.0

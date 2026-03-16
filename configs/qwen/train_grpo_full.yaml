@@ -1,0 +1,43 @@
+# Qwen3-30B-A3B: Our Method (R_leakage + lambda(t) * R_performance)
+# Override task via CLI: --tasks stock
+
+model_name: "Qwen/Qwen3-30B-A3B"
+lora_rank: 32
+tasks: "stock"
+reward_mode: "full"
+
+# Section 3.2 hyperparameters
+group_size: 8
+batch_size: 32
+num_epochs: 3
+learning_rate: 1.0e-6
+max_tokens: 4096
+soft_length_penalty_start: 3072
+temperature: 0.8
+kl_coeff: 0.05
+tis_cap: 5.0
+
+loss_fn: "ppo"
+clip_low: 0.8
+clip_high: 1.28
+
+# Section 2.5 hybrid lambda schedule
+lambda_min: 0.1
+lambda_max: 0.3
+theta_high: 0.3
+theta_low: 0.1
+ema_alpha: 0.1
+
+# Judge LLM for claim extraction + leakage detection
+judge_model: "google/gemini-2.5-flash"
+use_search: true
+use_llm_judge: true
+search_cache_path: "results/qwen/train_grpo_full/search_cache.json"
+
+val_fraction: 0.1
+data_seed: 42
+dynamic_sampling: true
+
+log_path: "results/qwen/train_grpo_full"
+save_every: 0
+eval_every: 5

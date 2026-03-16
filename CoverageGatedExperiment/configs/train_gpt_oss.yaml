@@ -1,0 +1,37 @@
+model_name: "openai/gpt-oss-20b"
+lora_rank: 32
+
+group_size: 16
+batch_size: 8
+num_epochs: 2
+
+learning_rate: 2.0e-5
+max_tokens: 8192
+temperature: 0.6
+
+clip_low: 0.9
+clip_high: 2.0
+
+w_leak_start: 0.95
+w_leak_end: 0.80
+lambda_base: 0.5
+
+format_margin: 1.0
+z_clip: 5.0
+
+w_perf_clean: 0.40
+cov_target: 0.80
+cov_floor: 0.20
+w_cov_leak: 0.05
+
+train_tasks: "stock,salary,legal"
+val_fraction: 0.05
+data_seed: 42
+
+judge_model: "google/gemini-3-flash-preview"
+search_model: "perplexity/sonar"
+
+num_validations: 10
+log_dir: "runtime/results/gpt_oss/train_default"
+data_root: "runtime/data"
+concurrent_workers: 4
