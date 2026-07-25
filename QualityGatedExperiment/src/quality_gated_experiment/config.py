@@ -77,6 +77,11 @@ class TrainConfig:
     reason_decay: float = 0.002
     reason_floor: float = 0.0
 
+    # --- Rebuttal ablations: reward-design variant ---
+    # two_mode (default) | scalar_mix | leakage_only | performance_only
+    reward_variant: str = "two_mode"
+    scalar_alpha: float = 0.5  # weight on the leakage term in scalar_mix
+
 
 def load_config(path: str) -> TrainConfig:
     """Load training config from YAML file.

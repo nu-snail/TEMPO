@@ -25,8 +25,8 @@ results/
 # Paper writing (separate from code release)
 PaperWriting/
 
-# Dataset raw files (too large; download instructions in README)
-dataset/
+# Large EMNLP archive only; the train/evaluation/control splits are tracked
+dataset/emnlp2026/
 
 # Experiment plan and summary docs
 EXPERIMENT_PLAN.md

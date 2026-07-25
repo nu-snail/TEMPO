@@ -229,7 +229,23 @@ class RewardPipeline:
         r_leak = np.array(
             [np.exp(-0.5 * r.num_leaked) for r in parseable], dtype=np.float64,
         )
-        all_clean = bool(r_leak.min() >= 0.99)
+
+        # Reward-design ablations (NeurIPS rebuttal): override the group-level
+        # mode gate. two_mode keeps the paper's design; performance_only /
+        # leakage_only force one branch; scalar_mix collapses both signals
+        # into a single scalar reward with no mode separation.
+        variant = self.cfg.reward_variant
+        if variant == "scalar_mix":
+            return self._scalar_mix_advantages(
+                rewards, parseable, r_leak, h_gate, d_gate, q_gate,
+                batch_mean_r_leak, batch_mean_r_eff_clean,
+            )
+        if variant == "performance_only":
+            all_clean = True
+        elif variant == "leakage_only":
+            all_clean = False
+        else:
+            all_clean = bool(r_leak.min() >= 0.99)
 
         if all_clean:
             # -- PERFORMANCE MODE (quality-gated) --
@@ -319,6 +335,76 @@ class RewardPipeline:
             "r_leak_values": r_leak.tolist(),
             "format_penalty": format_penalty,
             **diag_extra,
+        }
+        return out, diag
+
+    def _scalar_mix_advantages(
+        self,
+        rewards: list[CompletionReward],
+        parseable: list[CompletionReward],
+        r_leak: np.ndarray,
+        h_gate: np.ndarray,
+        d_gate: np.ndarray,
+        q_gate: np.ndarray,
+        batch_mean_r_leak: float,
+        batch_mean_r_eff_clean: float,
+    ) -> tuple[list[float], dict[str, Any]]:
+        """Scalar-mixture ablation: no mode separation.
+
+        r_scalar = alpha * r_leak + (1 - alpha) * r_eff, applied to every
+        completion regardless of group cleanliness. Uses the same quality
+        gates as the two-mode design so the ablation isolates only the
+        mode-separation factor.
+        """
+        alpha = self.cfg.scalar_alpha
+        r_perf = np.array([r.r_performance for r in parseable], dtype=np.float64)
+        cov = np.array([r.coverage for r in parseable], dtype=np.float64)
+        cov_gate = np.minimum(1.0, cov / self.cfg.cov_target)
+        g_cov = self.cfg.cov_floor + (1 - self.cfg.cov_floor) * cov_gate
+        r_eff = r_perf * g_cov * h_gate * d_gate * q_gate
+
+        r_scalar = alpha * r_leak + (1 - alpha) * r_eff
+        batch_mean_scalar = (
+            alpha * batch_mean_r_leak + (1 - alpha) * batch_mean_r_eff_clean
+        )
+        z_scalar = _zscore(r_scalar, self.cfg.z_clip)
+        baseline = self.cfg.lambda_base * (r_scalar - batch_mean_scalar)
+        adv_raw = z_scalar + baseline
+
+        fp_base = float(adv_raw.min()) - self.cfg.format_margin
+        max_pos = float(adv_raw.max())
+        if max_pos > 0.01:
+            format_penalty = max(fp_base, -self.cfg.max_neg_ratio * max_pos)
+        else:
+            format_penalty = fp_base
+
+        out: list[float] = []
+        baseline_list: list[float] = []
+        j = 0
+        for r in rewards:
+            if not r.parse_success:
+                out.append(format_penalty)
+            else:
+                out.append(float(adv_raw[j]))
+                baseline_list.append(float(baseline[j]))
+                j += 1
+
+        diag: dict[str, Any] = {
+            "baseline_bonus": baseline_list,
+            "r_leak_values": r_leak.tolist(),
+            "format_penalty": format_penalty,
+            "r_leak_std": float(r_leak.std()),
+            "r_perf_std": float(r_perf.std()),
+            "r_eff_std": float(r_eff.std()),
+            "z_leak": [],
+            "z_perf": z_scalar.tolist(),
+            "r_eff_values": r_eff.tolist(),
+            "cov_values": cov.tolist(),
+            "h_gate": h_gate.tolist(),
+            "d_gate": d_gate.tolist(),
+            "q_gate": q_gate.tolist(),
+            "all_clean": bool(r_leak.min() >= 0.99),
+            "adv_mode": "scalar_mix",
         }
         return out, diag
 

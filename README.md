@@ -41,7 +41,7 @@ cp QualityGatedExperiment/.env.example .env
 
 ## Data
 
-The `dataset/` directory is not tracked due to size. It contains three splits:
+The `dataset/` directory ships with the repository and contains three splits:
 
 | Split | Contents |
 |-------|----------|
@@ -49,7 +49,8 @@ The `dataset/` directory is not tracked due to size. It contains three splits:
 | `dataset/evaluation/` | Held-out evaluation instances per task |
 | `dataset/control/` | Post-cutoff instances for zero-knowledge baseline |
 
-Each experiment copies data into its own `runtime/data/` via `scripts/bootstrap_data.sh`.
+Each experiment reads data from its own `runtime/data/`; run `bash scripts/bootstrap_data.sh`
+once from the repository root to create the links.
 
 ## Running Experiments
 

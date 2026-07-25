@@ -834,6 +834,15 @@ def main() -> None:
     parser.add_argument("--group_size", type=int, default=None, help="Override group_size in config.")
     parser.add_argument("--batch_size", type=int, default=None, help="Override batch_size in config.")
     parser.add_argument("--num_validations", type=int, default=None, help="Override num_validations in config.")
+    parser.add_argument(
+        "--reward_variant", default=None,
+        choices=["two_mode", "scalar_mix", "leakage_only", "performance_only"],
+        help="Override reward_variant in config (rebuttal ablations).",
+    )
+    parser.add_argument(
+        "--scalar_alpha", type=float, default=None,
+        help="Override scalar_alpha (leakage weight in scalar_mix).",
+    )
     args = parser.parse_args()
 
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s %(message)s")
@@ -854,6 +863,10 @@ def main() -> None:
         cfg.batch_size = args.batch_size
     if args.num_validations is not None:
         cfg.num_validations = args.num_validations
+    if args.reward_variant is not None:
+        cfg.reward_variant = args.reward_variant
+    if args.scalar_alpha is not None:
+        cfg.scalar_alpha = args.scalar_alpha
     run_training(cfg, project_root)
 
 

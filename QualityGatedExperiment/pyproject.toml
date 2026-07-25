@@ -11,7 +11,7 @@ dependencies = [
     "python-dotenv>=1.0.0",
     "pyyaml>=6.0.0",
     "scipy>=1.12.0",
-    "tinker>=0.13.1",
+    "tinker>=0.23.0",
     "tinker-cookbook",
     "torch>=2.3.0",
 ]
