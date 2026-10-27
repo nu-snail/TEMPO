@@ -1,0 +1,466 @@
+{
+  "qwen3_30b/stock/threshold_0.6": {
+    "memorization_rate": 0.28421052631578947,
+    "n_scored": 95,
+    "methods": {
+      "temporal_hint": {
+        "n_memorized": 27,
+        "n_non_memorized": 68,
+        "n_unscorable": 5,
+        "acc_memorized": 0.6962962962962963,
+        "acc_non_memorized": 0.5455882352941177,
+        "gap": 0.1507080610021786,
+        "gap_ci95": [
+          0.03638344226579515,
+          0.25762527233115473
+        ],
+        "spearman_recall_vs_perf": 0.3308788629230494
+      },
+      "rag": {
+        "n_memorized": 27,
+        "n_non_memorized": 68,
+        "n_unscorable": 5,
+        "acc_memorized": 0.5574074074074075,
+        "acc_non_memorized": 0.5786855531191614,
+        "gap": -0.021278145711753904,
+        "gap_ci95": [
+          -0.13793572984749458,
+          0.09074987991261951
+        ],
+        "spearman_recall_vs_perf": -0.05060163941118885
+      },
+      "timespec": {
+        "n_memorized": 27,
+        "n_non_memorized": 68,
+        "n_unscorable": 5,
+        "acc_memorized": 0.5047684390925521,
+        "acc_non_memorized": 0.5237048452488948,
+        "gap": -0.018936406156342733,
+        "gap_ci95": [
+          -0.13884469443858677,
+          0.09933437043737964
+        ],
+        "spearman_recall_vs_perf": -0.008666808180277295
+      },
+      "tempo": {
+        "n_memorized": 27,
+        "n_non_memorized": 68,
+        "n_unscorable": 5,
+        "acc_memorized": 0.7814814814814816,
+        "acc_non_memorized": 0.5735294117647058,
+        "gap": 0.2079520697167757,
+        "gap_ci95": [
+          0.11198257080610019,
+          0.2963779956427016
+        ],
+        "spearman_recall_vs_perf": 0.46809608487606
+      }
+    }
+  },
+  "qwen3_30b/stock/threshold_0.8": {
+    "memorization_rate": 0.14736842105263157,
+    "n_scored": 95,
+    "methods": {
+      "temporal_hint": {
+        "n_memorized": 14,
+        "n_non_memorized": 81,
+        "n_unscorable": 5,
+        "acc_memorized": 0.7357142857142858,
+        "acc_non_memorized": 0.562962962962963,
+        "gap": 0.17275132275132277,
+        "gap_ci95": [
+          0.03496472663139316,
+          0.297442680776014
+        ],
+        "spearman_recall_vs_perf": 0.3308788629230494
+      },
+      "rag": {
+        "n_memorized": 14,
+        "n_non_memorized": 81,
+        "n_unscorable": 5,
+        "acc_memorized": 0.5750000000000001,
+        "acc_non_memorized": 0.5722298470629996,
+        "gap": 0.0027701529370004474,
+        "gap_ci95": [
+          -0.14131393298059963,
+          0.14169533510376697
+        ],
+        "spearman_recall_vs_perf": -0.05060163941118885
+      },
+      "timespec": {
+        "n_memorized": 14,
+        "n_non_memorized": 81,
+        "n_unscorable": 5,
+        "acc_memorized": 0.577053418249922,
+        "acc_non_memorized": 0.5081719688509241,
+        "gap": 0.06888144939899787,
+        "gap_ci95": [
+          -0.09497098421350308,
+          0.22527438447122328
+        ],
+        "spearman_recall_vs_perf": -0.008666808180277295
+      },
+      "tempo": {
+        "n_memorized": 14,
+        "n_non_memorized": 81,
+        "n_unscorable": 5,
+        "acc_memorized": 0.8250000000000001,
+        "acc_non_memorized": 0.5993827160493826,
+        "gap": 0.22561728395061742,
+        "gap_ci95": [
+          0.11834215167548501,
+          0.32411816578483243
+        ],
+        "spearman_recall_vs_perf": 0.46809608487606
+      }
+    }
+  },
+  "qwen3_30b/salary/threshold_0.1": {
+    "memorization_rate": 0.08029197080291971,
+    "n_scored": 137,
+    "methods": {
+      "temporal_hint": {
+        "n_memorized": 11,
+        "n_non_memorized": 126,
+        "n_unscorable": 0,
+        "acc_memorized": 0.8074034819583212,
+        "acc_non_memorized": 0.5896705996959517,
+        "gap": 0.21773288226236953,
+        "gap_ci95": [
+          0.11495689837521772,
+          0.31160915049581495
+        ],
+        "spearman_recall_vs_perf": 0.2907356336532881
+      },
+      "rag": {
+        "n_memorized": 11,
+        "n_non_memorized": 126,
+        "n_unscorable": 0,
+        "acc_memorized": 0.9403505174768572,
+        "acc_non_memorized": 0.7342168647541483,
+        "gap": 0.2061336527227089,
+        "gap_ci95": [
+          0.1311628416510402,
+          0.27847887827098994
+        ],
+        "spearman_recall_vs_perf": 0.04904539807155099
+      },
+      "timespec": {
+        "n_memorized": 11,
+        "n_non_memorized": 126,
+        "n_unscorable": 0,
+        "acc_memorized": 0.658894315581816,
+        "acc_non_memorized": 0.6366212735450559,
+        "gap": 0.02227304203676006,
+        "gap_ci95": [
+          -0.16087225697470064,
+          0.18141354188459258
+        ],
+        "spearman_recall_vs_perf": 0.07502435032983905
+      },
+      "tempo": {
+        "n_memorized": 11,
+        "n_non_memorized": 126,
+        "n_unscorable": 0,
+        "acc_memorized": 0.6839622217658103,
+        "acc_non_memorized": 0.5343824150324374,
+        "gap": 0.1495798067333729,
+        "gap_ci95": [
+          -0.023676872341451105,
+          0.3076915823932502
+        ],
+        "spearman_recall_vs_perf": 0.3687709036970716
+      }
+    }
+  },
+  "qwen3_30b/salary/threshold_0.05": {
+    "memorization_rate": 0.051094890510948905,
+    "n_scored": 137,
+    "methods": {
+      "temporal_hint": {
+        "n_memorized": 7,
+        "n_non_memorized": 130,
+        "n_unscorable": 0,
+        "acc_memorized": 0.7760860693670335,
+        "acc_non_memorized": 0.5980563952127863,
+        "gap": 0.1780296741542472,
+        "gap_ci95": [
+          0.04861613248541519,
+          0.2964069677779334
+        ],
+        "spearman_recall_vs_perf": 0.2907356336532881
+      },
+      "rag": {
+        "n_memorized": 7,
+        "n_non_memorized": 130,
+        "n_unscorable": 0,
+        "acc_memorized": 0.9562332385409512,
+        "acc_non_memorized": 0.739704215242165,
+        "gap": 0.2165290232987862,
+        "gap_ci95": [
+          0.15719285774794312,
+          0.27860164063621096
+        ],
+        "spearman_recall_vs_perf": 0.04904539807155099
+      },
+      "timespec": {
+        "n_memorized": 7,
+        "n_non_memorized": 130,
+        "n_unscorable": 0,
+        "acc_memorized": 0.6860577704209652,
+        "acc_non_memorized": 0.6358439503471559,
+        "gap": 0.05021382007380926,
+        "gap_ci95": [
+          -0.20918866892563215,
+          0.24841309908409248
+        ],
+        "spearman_recall_vs_perf": 0.07502435032983905
+      },
+      "tempo": {
+        "n_memorized": 7,
+        "n_non_memorized": 130,
+        "n_unscorable": 0,
+        "acc_memorized": 0.7053426043435999,
+        "acc_non_memorized": 0.5378336192546602,
+        "gap": 0.16750898508893963,
+        "gap_ci95": [
+          -0.08752252733155363,
+          0.38999535969376375
+        ],
+        "spearman_recall_vs_perf": 0.3687709036970716
+      }
+    }
+  },
+  "qwen35_35b/stock/threshold_0.6": {
+    "memorization_rate": 0.42,
+    "n_scored": 100,
+    "methods": {
+      "temporal_hint": {
+        "n_memorized": 42,
+        "n_non_memorized": 58,
+        "n_unscorable": 0,
+        "acc_memorized": 0.8440476190476192,
+        "acc_non_memorized": 0.5775862068965517,
+        "gap": 0.26646141215106744,
+        "gap_ci95": [
+          0.19146141215106738,
+          0.341215106732348
+        ],
+        "spearman_recall_vs_perf": 0.6205215915439112
+      },
+      "rag": {
+        "n_memorized": 42,
+        "n_non_memorized": 58,
+        "n_unscorable": 0,
+        "acc_memorized": 0.6642857142857143,
+        "acc_non_memorized": 0.5586206896551724,
+        "gap": 0.10566502463054184,
+        "gap_ci95": [
+          -0.001436781609195359,
+          0.21194581280788172
+        ],
+        "spearman_recall_vs_perf": 0.27411464007000846
+      },
+      "timespec": {
+        "n_memorized": 42,
+        "n_non_memorized": 58,
+        "n_unscorable": 0,
+        "acc_memorized": 0.6726190476190477,
+        "acc_non_memorized": 0.5301724137931034,
+        "gap": 0.14244663382594425,
+        "gap_ci95": [
+          0.0410919540229886,
+          0.24125615763546793
+        ],
+        "spearman_recall_vs_perf": 0.364740280459949
+      },
+      "tempo": {
+        "n_memorized": 42,
+        "n_non_memorized": 58,
+        "n_unscorable": 0,
+        "acc_memorized": 0.7535714285714286,
+        "acc_non_memorized": 0.5405172413793103,
+        "gap": 0.21305418719211822,
+        "gap_ci95": [
+          0.1082512315270936,
+          0.31165845648604273
+        ],
+        "spearman_recall_vs_perf": 0.47657473326107586
+      }
+    }
+  },
+  "qwen35_35b/stock/threshold_0.8": {
+    "memorization_rate": 0.18,
+    "n_scored": 100,
+    "methods": {
+      "temporal_hint": {
+        "n_memorized": 18,
+        "n_non_memorized": 82,
+        "n_unscorable": 0,
+        "acc_memorized": 0.8777777777777778,
+        "acc_non_memorized": 0.6481707317073171,
+        "gap": 0.22960704607046067,
+        "gap_ci95": [
+          0.15691056910569112,
+          0.30128726287262875
+        ],
+        "spearman_recall_vs_perf": 0.6205215915439112
+      },
+      "rag": {
+        "n_memorized": 18,
+        "n_non_memorized": 82,
+        "n_unscorable": 0,
+        "acc_memorized": 0.7777777777777778,
+        "acc_non_memorized": 0.5646341463414634,
+        "gap": 0.21314363143631443,
+        "gap_ci95": [
+          0.10806233062330617,
+          0.3154471544715447
+        ],
+        "spearman_recall_vs_perf": 0.27411464007000846
+      },
+      "timespec": {
+        "n_memorized": 18,
+        "n_non_memorized": 82,
+        "n_unscorable": 0,
+        "acc_memorized": 0.7388888888888889,
+        "acc_non_memorized": 0.5573170731707318,
+        "gap": 0.18157181571815717,
+        "gap_ci95": [
+          0.029945799457994582,
+          0.3147018970189701
+        ],
+        "spearman_recall_vs_perf": 0.364740280459949
+      },
+      "tempo": {
+        "n_memorized": 18,
+        "n_non_memorized": 82,
+        "n_unscorable": 0,
+        "acc_memorized": 0.7666666666666667,
+        "acc_non_memorized": 0.6000000000000001,
+        "gap": 0.16666666666666663,
+        "gap_ci95": [
+          0.00203252032520318,
+          0.3059620596205962
+        ],
+        "spearman_recall_vs_perf": 0.47657473326107586
+      }
+    }
+  },
+  "qwen35_35b/salary/threshold_0.1": {
+    "memorization_rate": 0.18045112781954886,
+    "n_scored": 133,
+    "methods": {
+      "temporal_hint": {
+        "n_memorized": 24,
+        "n_non_memorized": 109,
+        "n_unscorable": 4,
+        "acc_memorized": 0.5749537852903558,
+        "acc_non_memorized": 0.5630810636574208,
+        "gap": 0.011872721632934957,
+        "gap_ci95": [
+          -0.12904807560622383,
+          0.14699845778201115
+        ],
+        "spearman_recall_vs_perf": 0.38605167270826163
+      },
+      "rag": {
+        "n_memorized": 24,
+        "n_non_memorized": 109,
+        "n_unscorable": 4,
+        "acc_memorized": 0.824932248654537,
+        "acc_non_memorized": 0.7593576134254211,
+        "gap": 0.06557463522911589,
+        "gap_ci95": [
+          -0.03740585256568141,
+          0.16689410633307344
+        ],
+        "spearman_recall_vs_perf": 0.07684592209571686
+      },
+      "timespec": {
+        "n_memorized": 24,
+        "n_non_memorized": 109,
+        "n_unscorable": 4,
+        "acc_memorized": 0.7024091577542432,
+        "acc_non_memorized": 0.6451471963569715,
+        "gap": 0.05726196139727169,
+        "gap_ci95": [
+          -0.08083305147363984,
+          0.1823037518436894
+        ],
+        "spearman_recall_vs_perf": 0.054042471980594226
+      },
+      "tempo": {
+        "n_memorized": 24,
+        "n_non_memorized": 109,
+        "n_unscorable": 4,
+        "acc_memorized": 0.6887583159734296,
+        "acc_non_memorized": 0.617844149988668,
+        "gap": 0.07091416598476163,
+        "gap_ci95": [
+          -0.0678100604664903,
+          0.20067085192988365
+        ],
+        "spearman_recall_vs_perf": 0.26584220982288437
+      }
+    }
+  },
+  "qwen35_35b/salary/threshold_0.05": {
+    "memorization_rate": 0.09774436090225563,
+    "n_scored": 133,
+    "methods": {
+      "temporal_hint": {
+        "n_memorized": 13,
+        "n_non_memorized": 120,
+        "n_unscorable": 4,
+        "acc_memorized": 0.5289748022028818,
+        "acc_non_memorized": 0.5691504529749162,
+        "gap": -0.04017565077203433,
+        "gap_ci95": [
+          -0.2293934882328515,
+          0.1362454583709789
+        ],
+        "spearman_recall_vs_perf": 0.38605167270826163
+      },
+      "rag": {
+        "n_memorized": 13,
+        "n_non_memorized": 120,
+        "n_unscorable": 4,
+        "acc_memorized": 0.8462959715676959,
+        "acc_non_memorized": 0.7630542183391643,
+        "gap": 0.08324175322853156,
+        "gap_ci95": [
+          -0.03772177180380265,
+          0.19514168439143798
+        ],
+        "spearman_recall_vs_perf": 0.07684592209571686
+      },
+      "timespec": {
+        "n_memorized": 13,
+        "n_non_memorized": 120,
+        "n_unscorable": 4,
+        "acc_memorized": 0.7956497184182354,
+        "acc_non_memorized": 0.6402951487464555,
+        "gap": 0.15535456967177985,
+        "gap_ci95": [
+          0.06287914163005981,
+          0.24619397904994544
+        ],
+        "spearman_recall_vs_perf": 0.054042471980594226
+      },
+      "tempo": {
+        "n_memorized": 13,
+        "n_non_memorized": 120,
+        "n_unscorable": 4,
+        "acc_memorized": 0.753906004065879,
+        "acc_non_memorized": 0.6172869489939224,
+        "gap": 0.1366190550719566,
+        "gap_ci95": [
+          -0.027444606299668495,
+          0.2654502486661413
+        ],
+        "spearman_recall_vs_perf": 0.26584220982288437
+      }
+    }
+  }
+}

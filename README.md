@@ -1,150 +1,58 @@
-# TEMPO: Temporal Enforcement via Mode-separated Policy Optimization
+# TEMPO
 
-TEMPO uses reinforcement learning (GRPO with LoRA) to train language models that avoid citing post-cutoff knowledge during backtesting. A two-mode reward first drives temporal leakage to zero, then optimizes prediction accuracy subject to evidence-coverage constraints. At inference, TEMPO requires a single forward pass---identical in cost to the unmodified model.
+Code, data, and evaluation outputs for **TEMPO: Temporal Enforcement via Mode-Separated Policy Optimization for Trustworthy LLM Backtesting** (NeurIPS 2026).
 
-## Project Structure
-
-```
-├── QualityGatedExperiment/   # Main experiment (reward v4, paper results)
-│   ├── configs/              #   YAML configs per model
-│   ├── scripts/              #   Train/eval shell scripts
-│   └── src/                  #   Training, evaluation, reward pipeline
-├── CoverageGatedExperiment/  # Intermediate experiment (reward v2-v3)
-├── FullExperiment/           # Earlier full-pipeline experiment
-├── TRLExperiment/            # Early TRL-based prototype
-├── src/                      # Shared modules (evaluation, search, prompts)
-├── scripts/                  # Top-level orchestration scripts
-├── configs/                  # Top-level configs (Qwen, DeepSeek)
-├── dataset/                  # Data splits (not tracked; see below)
-└── tests/                    # Integration tests
-```
-
-## Prerequisites
-
-- Python 3.11 or 3.12
-- [uv](https://docs.astral.sh/uv/) package manager
-- API keys: [OpenRouter](https://openrouter.ai/) and [Tinker](https://pypi.org/project/tinker/)
-- GPU with ≥24 GB VRAM for training (A100/H100 recommended)
+TEMPO trains an LLM with GRPO and a two-mode reward so that the evidence behind each prediction is dated before the instance's cutoff. Training and sampling run on the [Tinker](https://tinker-docs.thinkingmachines.ai/) API; the date-plausibility verifier and search run through [OpenRouter](https://openrouter.ai/). No local GPU is needed.
 
 ## Setup
 
 ```bash
-git clone https://github.com/<your-org>/TEMPO.git && cd TEMPO
-
-# Install dependencies
-uv sync
-
-# Configure API keys
-cp QualityGatedExperiment/.env.example .env
-# Edit .env and set OPENROUTER_API_KEY and TINKER_API_KEY
+uv sync                     # add --extra data to rebuild the datasets
+cp .env.example .env        # then fill in the API keys
 ```
 
-## Data
+All commands below run from the repository root.
 
-The `dataset/` directory ships with the repository and contains three splits:
+## Repository layout
 
-| Split | Contents |
-|-------|----------|
-| `dataset/train/` | Stock rankings, salary predictions, legal cases (training instances) |
-| `dataset/evaluation/` | Held-out evaluation instances per task |
-| `dataset/control/` | Post-cutoff instances for zero-knowledge baseline |
+| Path | Contents |
+|---|---|
+| `src/quality_gated_experiment/` | Reward pipeline, GRPO training, evaluation, RAG and TimeSPEC baselines |
+| `configs/` | Training and evaluation configs for Qwen3-30B-A3B and Qwen3.5-35B-A3B |
+| `scripts/` | Run scripts; `scripts/analysis/` holds the appendix analyses |
+| `dataset/` | `train/`, `evaluation/`, `control/` splits with build scripts; `verifier_gold/` holds the 120 human-labeled claims |
+| `results/` | Evaluation outputs behind the paper's tables |
 
-Each experiment reads data from its own `runtime/data/`; run `bash scripts/bootstrap_data.sh`
-once from the repository root to create the links.
+## Reproducing the paper
 
-## Running Experiments
+| Paper | Command |
+|---|---|
+| Dataset checks (App. D) | `python scripts/verify_dataset.py` |
+| TEMPO, train + evaluate (Table 2) | `bash scripts/run_qwen3_30b.sh [tasks]`, `bash scripts/run_qwen35_35b.sh [tasks]` |
+| RAG baseline (Table 2) | `bash scripts/run_rag_eval.sh configs/eval_rag_<model>.yaml [tasks]` |
+| TimeSPEC baseline (Table 2) | `bash scripts/run_timespec_eval.sh configs/eval_timespec_<model>.yaml [tasks]` |
+| Control set (Table 2) | `bash scripts/run_control_eval.sh` |
+| DCLR (Table 2) | `python scripts/analysis/shapley_dclr.py --task <task> --model_dir <model>` |
+| Reward-design ablation (Table 4) | `bash scripts/run_reward_ablations.sh <scalar_mix\|leakage_only\|performance_only>` |
+| Verifier validation (App. H.1) | `scripts/analysis/verifier_gold_test.py`, `independent_rescore.py`, `label_noise_sim.py`, `verifier_extensions.py` |
+| Outcome-recall probe (App. H.2) | `scripts/analysis/recall_probe.py`, then `analyze_recall_probe.py` and `gap_vs_null_diff.py` |
+| Reconstruction test (App. H.3) | `python scripts/analysis/reconstruction_gap.py --task <task> --variant <method>` |
 
-### Reproduce paper results (QualityGatedExperiment)
+Each analysis script documents its arguments at the top of the file. Training writes to `results/<model>/train_*` and evaluation to `results/<model>/eval_<task>_{best,final}`.
 
-This is the final experiment configuration (reward v4) used to produce all results reported in the paper.
+**Note on re-training.** Both base models have since been retired from Tinker for fine-tuning. Evaluation, the baselines, and all analyses still run from the released outputs; re-training requires a provider that serves these models.
 
-```bash
-cd QualityGatedExperiment
+## Released outputs
 
-# Copy data into runtime/
-bash scripts/bootstrap_data.sh
+`results/<model>/eval_<task>_<method>/` contains `summary.json` (aggregate metrics) and `eval_step_log.jsonl` (each completion with its claims and verifier verdicts), where `<method>` is `base` (Temporal Hint), `rag`, `timespec`, or `tempo` (the TEMPO checkpoint reported in the paper). `results/<model>/control_<task>/` holds the control-set runs, and `results/analysis/` holds the outputs of the appendix analyses.
 
-# Copy and set API keys
-cp .env.example .env   # then edit
+## Citation
 
-# Full pipeline: train + evaluate all methods (base, best, final, RAG, TimeSPEC)
-# Qwen3-30B-A3B on all three tasks:
-bash scripts/run_full.sh configs/train_qwen3_30b.yaml configs/eval_qwen3_30b.yaml stock salary legal
-
-# Qwen3.5-35B-A3B:
-bash scripts/run_full.sh configs/train_qwen35_35b.yaml configs/eval_qwen35_35b.yaml stock salary legal
+```bibtex
+@inproceedings{zhang2026tempo,
+  title     = {{TEMPO}: Temporal Enforcement via Mode-Separated Policy Optimization for Trustworthy {LLM} Backtesting},
+  author    = {Zhang, Zeyu and Stadie, Bradly C.},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2026}
+}
 ```
-
-Each task runs: train → evaluate (base + best + final checkpoints + RAG + TimeSPEC) → cleanup.
-
-Results are written to `runtime/results/<model>/`.
-
-### Run a single task
-
-```bash
-cd QualityGatedExperiment
-
-# Train on stock only
-bash scripts/run_full.sh configs/train_qwen3_30b.yaml configs/eval_qwen3_30b.yaml stock
-```
-
-### Run individual steps
-
-```bash
-cd QualityGatedExperiment
-export PYTHONPATH=src:$PYTHONPATH && source .env
-
-# Train
-python -m quality_gated_experiment.train \
-    --config configs/train_qwen3_30b.yaml \
-    --train_tasks stock \
-    --log_dir runtime/results/train_stock
-
-# Evaluate base model
-python -m quality_gated_experiment.evaluate \
-    --config configs/eval_qwen3_30b.yaml \
-    --variant base \
-    --trained_task stock \
-    --eval_tasks stock \
-    --output_dir runtime/results/eval_stock_base
-
-# Evaluate RAG baseline
-python -m quality_gated_experiment.rag_evaluate \
-    --config configs/eval_rag_qwen3_30b.yaml \
-    --eval_tasks stock \
-    --output_dir runtime/results/eval_stock_rag
-
-# Evaluate TimeSPEC baseline
-python -m quality_gated_experiment.timespec_evaluate \
-    --config configs/eval_timespec_qwen3_30b.yaml \
-    --eval_tasks stock \
-    --output_dir runtime/results/eval_stock_timespec
-```
-
-### Earlier experiment versions
-
-The `CoverageGatedExperiment/`, `FullExperiment/`, and `TRLExperiment/` directories contain earlier reward design iterations (v1--v3). They follow the same train/eval pattern:
-
-```bash
-cd CoverageGatedExperiment
-bash scripts/bootstrap_data.sh
-bash scripts/run_full.sh stock salary legal
-```
-
-## Configuration
-
-Training and evaluation are controlled by YAML configs in each experiment's `configs/` directory. Key parameters:
-
-| Parameter | Description | Default |
-|-----------|-------------|---------|
-| `model` | HuggingFace model ID | `Qwen/Qwen3-30B-A3B` |
-| `lora_rank` | LoRA rank | 32 |
-| `group_size` | GRPO group size | 16 |
-| `batch_size` | Training batch size | 8 |
-| `num_epochs` | Training epochs | 2 |
-| `judge_model` | LLM for claim verification | `google/gemini-3-flash-preview` |
-| `search_model` | Search API model | `perplexity/sonar` |
-
-## License
-
-TBD

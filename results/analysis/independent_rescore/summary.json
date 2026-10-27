@@ -1,0 +1,34 @@
+{
+  "stock/Temporal Hint": {
+    "n_claims": 1265,
+    "olr_gemini": 0.1225296442687747,
+    "olr_claude": 0.05533596837944664,
+    "agree_claude": 0.9264822134387352,
+    "olr_kimi": 0.062450592885375494,
+    "agree_kimi": 0.9335968379446641
+  },
+  "stock/RAG": {
+    "n_claims": 1121,
+    "olr_gemini": 0.06868867082961641,
+    "olr_claude": 0.05084745762711865,
+    "agree_claude": 0.9732381801962533,
+    "olr_kimi": 0.05263157894736842,
+    "agree_kimi": 0.9768064228367529
+  },
+  "stock/TimeSPEC": {
+    "n_claims": 1983,
+    "olr_gemini": 0.019162884518406455,
+    "olr_claude": 0.019162884518406455,
+    "agree_claude": 0.9899142713061019,
+    "olr_kimi": 0.015128593040847202,
+    "agree_kimi": 0.9939485627836612
+  },
+  "stock/TEMPO": {
+    "n_claims": 2200,
+    "olr_gemini": 0.020454545454545454,
+    "olr_claude": 0.0009090909090909091,
+    "agree_claude": 0.9804545454545455,
+    "olr_kimi": 0.0022727272727272726,
+    "agree_kimi": 0.9781818181818182
+  }
+}

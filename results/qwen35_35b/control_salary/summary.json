@@ -1,0 +1,55 @@
+{
+  "config": {
+    "model": "Qwen/Qwen3.5-35B-A3B",
+    "variant": "base",
+    "trained_task": "salary",
+    "temperature": 0.0,
+    "judge_model": "google/gemini-3-flash-preview"
+  },
+  "salary": {
+    "n_instances": 26,
+    "parse_rate": 1.0,
+    "total_claims_sum": 194,
+    "leaked_claims_sum": 1,
+    "sonar_verified_sum": 0,
+    "r_format": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "leakage_rate": {
+      "mean": 0.004273504273504273,
+      "std": 0.021790681682020446
+    },
+    "coverage": {
+      "mean": 0.8618131868131869,
+      "std": 0.13308595284703859
+    },
+    "r_performance": {
+      "mean": 0.5489022806602384,
+      "std": 0.3575769953412237
+    }
+  },
+  "overall": {
+    "n_instances": 26,
+    "parse_rate": 1.0,
+    "total_claims_sum": 194,
+    "leaked_claims_sum": 1,
+    "sonar_verified_sum": 0,
+    "r_format": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "leakage_rate": {
+      "mean": 0.004273504273504273,
+      "std": 0.021790681682020446
+    },
+    "coverage": {
+      "mean": 0.8618131868131869,
+      "std": 0.13308595284703859
+    },
+    "r_performance": {
+      "mean": 0.5489022806602384,
+      "std": 0.3575769953412237
+    }
+  }
+}

@@ -1,0 +1,15 @@
+model_name: "Qwen/Qwen3-30B-A3B"
+renderer_name: "qwen3_disable_thinking"
+lora_rank: 32
+
+temperature: 0.0
+max_tokens: 8192
+
+judge_model: "google/gemini-3-flash-preview"
+search_model: "perplexity/sonar"
+use_search: true
+
+eval_tasks: "stock,salary,legal"
+data_root: "dataset"
+search_cache_path: "runtime/cache/eval_qwen3_30b_search_cache.json"
+concurrent_workers: 32

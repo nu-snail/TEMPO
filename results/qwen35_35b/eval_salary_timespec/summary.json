@@ -1,0 +1,55 @@
+{
+  "config": {
+    "model": "Qwen/Qwen3.5-35B-A3B",
+    "variant": "timespec",
+    "trained_task": "none",
+    "temperature": 0.0,
+    "judge_model": "google/gemini-3-flash-preview"
+  },
+  "salary": {
+    "n_instances": 137,
+    "parse_rate": 0.9708029197080292,
+    "total_claims_sum": 1714,
+    "leaked_claims_sum": 12,
+    "sonar_verified_sum": 0,
+    "r_format": {
+      "mean": 0.9708029197080292,
+      "std": 0.1689764097447811
+    },
+    "leakage_rate": {
+      "mean": 0.0067746051000666715,
+      "std": 0.028765659818672632
+    },
+    "coverage": {
+      "mean": 0.7503458427370783,
+      "std": 0.20208841167859998
+    },
+    "r_performance": {
+      "mean": 0.6561329947718232,
+      "std": 0.30483134310297944
+    }
+  },
+  "overall": {
+    "n_instances": 137,
+    "parse_rate": 0.9708029197080292,
+    "total_claims_sum": 1714,
+    "leaked_claims_sum": 12,
+    "sonar_verified_sum": 0,
+    "r_format": {
+      "mean": 0.9708029197080292,
+      "std": 0.1689764097447811
+    },
+    "leakage_rate": {
+      "mean": 0.0067746051000666715,
+      "std": 0.028765659818672632
+    },
+    "coverage": {
+      "mean": 0.7503458427370783,
+      "std": 0.20208841167859998
+    },
+    "r_performance": {
+      "mean": 0.6561329947718232,
+      "std": 0.30483134310297944
+    }
+  }
+}

@@ -21,8 +21,10 @@ from pathlib import Path
 import pdfplumber
 import requests
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[3] / "src"))
-from shared.config import OPENROUTER_API_KEY  # noqa: E402
+from dotenv import load_dotenv  # noqa: E402
+
+load_dotenv(Path(__file__).resolve().parents[3] / ".env")
+OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
 
 COURTS = [f"ca{i}" for i in range(1, 12)] + ["cadc", "cafc"]
 COURT_NAMES = {

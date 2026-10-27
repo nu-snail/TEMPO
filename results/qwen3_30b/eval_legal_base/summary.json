@@ -1,0 +1,55 @@
+{
+  "config": {
+    "model": "Qwen/Qwen3-30B-A3B",
+    "variant": "base",
+    "trained_task": "legal",
+    "temperature": 0.0,
+    "judge_model": "google/gemini-3-flash-preview"
+  },
+  "legal": {
+    "n_instances": 100,
+    "parse_rate": 0.97,
+    "total_claims_sum": 598,
+    "leaked_claims_sum": 14,
+    "sonar_verified_sum": 0,
+    "r_format": {
+      "mean": 0.97,
+      "std": 0.17144660799776532
+    },
+    "leakage_rate": {
+      "mean": 0.022452380952380953,
+      "std": 0.08102750595575
+    },
+    "coverage": {
+      "mean": 0.6170079365079366,
+      "std": 0.2087254341729152
+    },
+    "r_performance": {
+      "mean": 0.7568250000000001,
+      "std": 0.20771145213609396
+    }
+  },
+  "overall": {
+    "n_instances": 100,
+    "parse_rate": 0.97,
+    "total_claims_sum": 598,
+    "leaked_claims_sum": 14,
+    "sonar_verified_sum": 0,
+    "r_format": {
+      "mean": 0.97,
+      "std": 0.17144660799776532
+    },
+    "leakage_rate": {
+      "mean": 0.022452380952380953,
+      "std": 0.08102750595575
+    },
+    "coverage": {
+      "mean": 0.6170079365079366,
+      "std": 0.2087254341729152
+    },
+    "r_performance": {
+      "mean": 0.7568250000000001,
+      "std": 0.20771145213609396
+    }
+  }
+}

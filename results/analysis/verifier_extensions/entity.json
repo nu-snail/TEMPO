@@ -1,0 +1,4890 @@
+{
+  "summary": {
+    "Temporal Hint": {
+      "claims_checked": 1265,
+      "flagged": 74,
+      "flagged_pct": 5.85,
+      "flagged_not_already_leaked": 58,
+      "olr_pct": 12.71,
+      "olr_if_flagged_counted_pct": 17.54
+    },
+    "RAG": {
+      "claims_checked": 1121,
+      "flagged": 46,
+      "flagged_pct": 4.1,
+      "flagged_not_already_leaked": 34,
+      "olr_pct": 6.76,
+      "olr_if_flagged_counted_pct": 9.73
+    },
+    "TimeSPEC": {
+      "claims_checked": 1983,
+      "flagged": 41,
+      "flagged_pct": 2.07,
+      "flagged_not_already_leaked": 38,
+      "olr_pct": 1.47,
+      "olr_if_flagged_counted_pct": 3.57
+    },
+    "TEMPO": {
+      "claims_checked": 2200,
+      "flagged": 162,
+      "flagged_pct": 7.36,
+      "flagged_not_already_leaked": 151,
+      "olr_pct": 2.35,
+      "olr_if_flagged_counted_pct": 9.9
+    }
+  },
+  "audit_recall": {
+    "stock/tempo/73/8": true,
+    "stock/tempo/60/18": true,
+    "stock/tempo/2/7": true
+  },
+  "unparsed": 0,
+  "flagged_items": [
+    {
+      "key": "stock/base/4/4",
+      "label": "Temporal Hint",
+      "li": 4,
+      "index": 4,
+      "claim": "Meta Platforms reported Q3 2019 net income of $4.3 billion, a 20% increase year-over-year, with daily active users across its family of apps reaching 2.5 billion.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 7,
+        "anachronistic": true,
+        "name_used": "Meta Platforms",
+        "name_at_cutoff": "Facebook, Inc."
+      }
+    },
+    {
+      "key": "stock/base/4/5",
+      "label": "Temporal Hint",
+      "li": 4,
+      "index": 5,
+      "claim": "Meta Platforms announced in October 2019 that it had launched a new AI-driven ad targeting system to improve advertiser ROI, which was expected to drive future revenue growth.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 8,
+        "anachronistic": true,
+        "name_used": "Meta Platforms",
+        "name_at_cutoff": "Facebook, Inc."
+      }
+    },
+    {
+      "key": "stock/base/7/2",
+      "label": "Temporal Hint",
+      "li": 7,
+      "index": 2,
+      "claim": "BXP reported Q3 2019 revenue of $335.6 million, a 1% year-over-year increase, and reported a significant decline in same-store NOI compared to the prior year.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 35,
+        "anachronistic": true,
+        "name_used": "BXP",
+        "name_at_cutoff": "Boston Properties"
+      }
+    },
+    {
+      "key": "stock/base/7/8",
+      "label": "Temporal Hint",
+      "li": 7,
+      "index": 8,
+      "claim": "BXP announced in September 2019 that it had completed the sale of two office properties for $1.1 billion, aiming to reduce debt and improve liquidity.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 1,
+        "anachronistic": true,
+        "name_used": "BXP",
+        "name_at_cutoff": "Boston Properties, Inc."
+      }
+    },
+    {
+      "key": "stock/base/10/2",
+      "label": "Temporal Hint",
+      "li": 10,
+      "index": 2,
+      "claim": "Everest Group (EG) reported Q3 2019 net income of $106.5 million, or $1.13 per share, on revenue of $1.1 billion, with a return on equity of 14.2%.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 34,
+        "anachronistic": true,
+        "name_used": "Everest Group (EG)",
+        "name_at_cutoff": "Everest Re Group (RE)"
+      }
+    },
+    {
+      "key": "stock/base/10/3",
+      "label": "Temporal Hint",
+      "li": 10,
+      "index": 3,
+      "claim": "Willis Towers Watson (WTW) reported Q3 2019 net income of $135 million, or $1.05 per share, on revenue of $2.1 billion, with a return on equity of 18.5%.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 35,
+        "anachronistic": true,
+        "name_used": "WTW",
+        "name_at_cutoff": "WLTW"
+      }
+    },
+    {
+      "key": "stock/base/10/8",
+      "label": "Temporal Hint",
+      "li": 10,
+      "index": 8,
+      "claim": "Everest Group (EG) reported a combined ratio of 94.5% in Q3 2019, indicating underwriting profitability in its property and casualty insurance segments.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 0,
+        "anachronistic": true,
+        "name_used": "Everest Group",
+        "name_at_cutoff": "Everest Re Group"
+      }
+    },
+    {
+      "key": "stock/base/11/8",
+      "label": "Temporal Hint",
+      "li": 11,
+      "index": 8,
+      "claim": "Dayforce (Day 1) was not a publicly traded company as of December 2019; it was a subsidiary of Ceridian and had not completed an IPO by the start of the evaluation period.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 12,
+        "anachronistic": true,
+        "name_used": "Dayforce",
+        "name_at_cutoff": "Ceridian"
+      }
+    },
+    {
+      "key": "stock/base/13/4",
+      "label": "Temporal Hint",
+      "li": 13,
+      "index": 4,
+      "claim": "APA Corporation reported Q3 2019 net loss of $104 million, or $0.23 per share, on revenue of $1.3 billion, impacted by lower natural gas prices and asset impairments.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 33,
+        "anachronistic": true,
+        "name_used": "APA Corporation",
+        "name_at_cutoff": "Apache Corporation"
+      }
+    },
+    {
+      "key": "stock/base/13/5",
+      "label": "Temporal Hint",
+      "li": 13,
+      "index": 5,
+      "claim": "APA Corporation suspended its dividend in Q3 2019 to preserve cash amid falling commodity prices and reduced free cash flow.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 34,
+        "anachronistic": true,
+        "name_used": "APA Corporation",
+        "name_at_cutoff": "Apache Corporation"
+      }
+    },
+    {
+      "key": "stock/base/17/6",
+      "label": "Temporal Hint",
+      "li": 17,
+      "index": 6,
+      "claim": "Warner Bros. Discovery did not exist as a public company before 2019-12-01; it was formed in April 2022 through the merger of WarnerMedia and Discovery, Inc.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 2,
+        "anachronistic": true,
+        "name_used": "Warner Bros. Discovery",
+        "name_at_cutoff": "N/A"
+      }
+    },
+    {
+      "key": "stock/base/20/5",
+      "label": "Temporal Hint",
+      "li": 20,
+      "index": 5,
+      "claim": "Molson Coors Beverage Company reported Q3 2019 organic revenue growth of 3.5%, with strong performance in its North American portfolio.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 0,
+        "anachronistic": true,
+        "name_used": "Molson Coors Beverage Company",
+        "name_at_cutoff": "Molson Coors Brewing Company"
+      }
+    },
+    {
+      "key": "stock/base/20/6",
+      "label": "Temporal Hint",
+      "li": 20,
+      "index": 6,
+      "claim": "Molson Coors Beverage Company announced a strategic partnership with Constellation Brands to expand its craft beer portfolio in October 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 1,
+        "anachronistic": true,
+        "name_used": "Molson Coors Beverage Company",
+        "name_at_cutoff": "Molson Coors Brewing Company"
+      }
+    },
+    {
+      "key": "stock/base/20/12",
+      "label": "Temporal Hint",
+      "li": 20,
+      "index": 12,
+      "claim": "Molson Coors Beverage Company had a market capitalization of approximately $13 billion as of late October 2019, with a focus on premiumization strategies.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 7,
+        "anachronistic": true,
+        "name_used": "Molson Coors Beverage Company",
+        "name_at_cutoff": "Molson Coors Brewing Company"
+      }
+    },
+    {
+      "key": "stock/base/24/6",
+      "label": "Temporal Hint",
+      "li": 24,
+      "index": 6,
+      "claim": "Paramount Global (formerly ViacomCBS) was formed in December 2019 following the merger of Viacom and CBS Corporation, with the merger closing on December 4, 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 19,
+        "anachronistic": true,
+        "name_used": "Paramount Global",
+        "name_at_cutoff": "ViacomCBS"
+      }
+    },
+    {
+      "key": "stock/base/28/7",
+      "label": "Temporal Hint",
+      "li": 28,
+      "index": 7,
+      "claim": "Elevance Health (then Anthem) reported Q3 2019 net income of $1.3 billion, with revenue of $32.5 billion, and maintained its full-year guidance.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 33,
+        "anachronistic": true,
+        "name_used": "Elevance Health",
+        "name_at_cutoff": "Anthem, Inc."
+      }
+    },
+    {
+      "key": "stock/base/28/8",
+      "label": "Temporal Hint",
+      "li": 28,
+      "index": 8,
+      "claim": "Elevance Health announced in August 2019 that it had completed the acquisition of CareCentrix, expanding its care management capabilities.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 34,
+        "anachronistic": true,
+        "name_used": "Elevance Health",
+        "name_at_cutoff": "Anthem, Inc."
+      }
+    },
+    {
+      "key": "stock/base/28/15",
+      "label": "Temporal Hint",
+      "li": 28,
+      "index": 15,
+      "claim": "Elevance Health had a market capitalization of approximately $60 billion as of late October 2019, with a stable but slower growth profile.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 1,
+        "anachronistic": true,
+        "name_used": "Elevance Health",
+        "name_at_cutoff": "Anthem, Inc."
+      }
+    },
+    {
+      "key": "stock/base/35/8",
+      "label": "Temporal Hint",
+      "li": 35,
+      "index": 8,
+      "claim": "Kellanova (formerly Kellogg Company) reported Q3 2019 net revenues of $3.9 billion, a 1% decrease, with diluted EPS of $0.70, citing weak demand in North America.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 10,
+        "anachronistic": true,
+        "name_used": "Kellanova",
+        "name_at_cutoff": "Kellogg Company"
+      }
+    },
+    {
+      "key": "stock/base/35/9",
+      "label": "Temporal Hint",
+      "li": 35,
+      "index": 9,
+      "claim": "Kellanova announced a major restructuring plan in late 2019 to spin off its North American cereal business and focus on international markets and snacking.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 11,
+        "anachronistic": true,
+        "name_used": "Kellanova",
+        "name_at_cutoff": "Kellogg Company"
+      }
+    },
+    {
+      "key": "stock/base/36/0",
+      "label": "Temporal Hint",
+      "li": 36,
+      "index": 0,
+      "claim": "Coterra Energy (CTRA) reported Q3 2019 net income of $136 million, or $0.20 per share, on revenue of $1.1 billion, marking a significant turnaround from a loss in the prior year quarter.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 12,
+        "anachronistic": true,
+        "name_used": "Coterra Energy (CTRA)",
+        "name_at_cutoff": "Cabot Oil & Gas (COG)"
+      }
+    },
+    {
+      "key": "stock/base/36/2",
+      "label": "Temporal Hint",
+      "li": 36,
+      "index": 2,
+      "claim": "Texas Pacific Land Corporation (TPL) reported Q3 2019 net income of $146 million, or $1.05 per share, with royalty revenues increasing 14% year-over-year due to higher oil and gas prices.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 14,
+        "anachronistic": true,
+        "name_used": "Texas Pacific Land Corporation",
+        "name_at_cutoff": "Texas Pacific Land Trust"
+      }
+    },
+    {
+      "key": "stock/base/36/6",
+      "label": "Temporal Hint",
+      "li": 36,
+      "index": 6,
+      "claim": "Texas Pacific Land Corporation (TPL) has a unique business model focused on royalty interests and land sales, providing high-margin cash flows with minimal capital expenditure requirements compared to traditional E&P firms.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 18,
+        "anachronistic": true,
+        "name_used": "Texas Pacific Land Corporation",
+        "name_at_cutoff": "Texas Pacific Land Trust"
+      }
+    },
+    {
+      "key": "stock/base/36/8",
+      "label": "Temporal Hint",
+      "li": 36,
+      "index": 8,
+      "claim": "Coterra Energy (CTRA) completed its merger with Devon Energy's Permian assets in early 2019, significantly increasing its scale and production efficiency in the Permian Basin.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 20,
+        "anachronistic": true,
+        "name_used": "Coterra Energy (CTRA)",
+        "name_at_cutoff": "Cabot Oil & Gas (COG)"
+      }
+    },
+    {
+      "key": "stock/base/39/4",
+      "label": "Temporal Hint",
+      "li": 39,
+      "index": 4,
+      "claim": "Warner Bros. Discovery (as Time Warner) reported third-quarter 2019 revenue of $10.1 billion, with operating income declining due to higher content costs.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 8,
+        "anachronistic": true,
+        "name_used": "Warner Bros. Discovery",
+        "name_at_cutoff": "WarnerMedia"
+      }
+    },
+    {
+      "key": "stock/base/40/4",
+      "label": "Temporal Hint",
+      "li": 40,
+      "index": 4,
+      "claim": "Healthpeak Properties reported Q3 2019 FFO per share of $0.58, down 2% year-over-year, citing headwinds from the pharmaceutical sector's reduced capital expenditure.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 18,
+        "anachronistic": true,
+        "name_used": "Healthpeak Properties",
+        "name_at_cutoff": "HCP, Inc."
+      }
+    },
+    {
+      "key": "stock/base/40/10",
+      "label": "Temporal Hint",
+      "li": 40,
+      "index": 10,
+      "claim": "Healthpeak Properties had a dividend yield of approximately 4.5% as of late September 2019, reflecting market concerns over its healthcare sector exposure.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 24,
+        "anachronistic": true,
+        "name_used": "Healthpeak Properties",
+        "name_at_cutoff": "HCP, Inc."
+      }
+    },
+    {
+      "key": "stock/base/43/2",
+      "label": "Temporal Hint",
+      "li": 43,
+      "index": 2,
+      "claim": "Viatris was formed in November 2019 through the merger of Pfizer's consumer health division and Mylan, creating a new entity with a combined market capitalization exceeding $30 billion.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 10,
+        "anachronistic": true,
+        "name_used": "Viatris",
+        "name_at_cutoff": "Mylan / Upjohn"
+      }
+    },
+    {
+      "key": "stock/base/43/3",
+      "label": "Temporal Hint",
+      "li": 43,
+      "index": 3,
+      "claim": "Viatris (then Mylan) reported Q3 2019 net sales of $3.4 billion, with a focus on generic pharmaceuticals and biosimilars, though facing headwinds from patent expirations.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 11,
+        "anachronistic": true,
+        "name_used": "Viatris",
+        "name_at_cutoff": "Mylan"
+      }
+    },
+    {
+      "key": "stock/base/43/4",
+      "label": "Temporal Hint",
+      "li": 43,
+      "index": 4,
+      "claim": "Cencora (formerly AmerisourceBergen) reported Q3 2019 net sales of $46.3 billion, reflecting a 10.5% increase year-over-year, driven by strong growth in its specialty distribution and pharmacy services segments.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 12,
+        "anachronistic": true,
+        "name_used": "Cencora",
+        "name_at_cutoff": "AmerisourceBergen"
+      }
+    },
+    {
+      "key": "stock/base/43/5",
+      "label": "Temporal Hint",
+      "li": 43,
+      "index": 5,
+      "claim": "Cencora announced in late 2019 its strategic acquisition of ConvaTec, a global medical technology company, to expand its portfolio in wound care and urology.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 13,
+        "anachronistic": true,
+        "name_used": "Cencora",
+        "name_at_cutoff": "AmerisourceBergen"
+      }
+    },
+    {
+      "key": "stock/base/46/0",
+      "label": "Temporal Hint",
+      "li": 46,
+      "index": 0,
+      "claim": "Jacobs Solutions reported Q3 2019 revenue of $2.6 billion, representing a 10% year-over-year increase, and raised its full-year 2019 guidance.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 38,
+        "anachronistic": true,
+        "name_used": "Jacobs Solutions",
+        "name_at_cutoff": "Jacobs Engineering Group"
+      }
+    },
+    {
+      "key": "stock/base/46/1",
+      "label": "Temporal Hint",
+      "li": 46,
+      "index": 1,
+      "claim": "Howmet Aerospace reported Q3 2019 revenue of $1.1 billion, a 13% year-over-year increase, driven by strong demand in the aerospace and defense sectors.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 39,
+        "anachronistic": true,
+        "name_used": "Howmet Aerospace",
+        "name_at_cutoff": "Arconic"
+      }
+    },
+    {
+      "key": "stock/base/46/5",
+      "label": "Temporal Hint",
+      "li": 46,
+      "index": 5,
+      "claim": "Jacobs Solutions announced a $1.5 billion acquisition of a major engineering firm in Q3 2019, expanding its global footprint.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 3,
+        "anachronistic": true,
+        "name_used": "Jacobs Solutions",
+        "name_at_cutoff": "Jacobs Engineering Group Inc."
+      }
+    },
+    {
+      "key": "stock/base/46/6",
+      "label": "Temporal Hint",
+      "li": 46,
+      "index": 6,
+      "claim": "Howmet Aerospace announced a $1.2 billion acquisition of a precision casting company in Q3 2019, enhancing its capabilities in aerospace components.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 4,
+        "anachronistic": true,
+        "name_used": "Howmet Aerospace",
+        "name_at_cutoff": "Arconic Inc."
+      }
+    },
+    {
+      "key": "stock/base/47/6",
+      "label": "Temporal Hint",
+      "li": 47,
+      "index": 6,
+      "claim": "F5, Inc. reported Q4 2019 revenue of $430 million, a 1% year-over-year increase, with the company facing headwinds from enterprise customers delaying spending on application delivery controllers.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 14,
+        "anachronistic": true,
+        "name_used": "F5, Inc.",
+        "name_at_cutoff": "F5 Networks, Inc."
+      }
+    },
+    {
+      "key": "stock/base/47/7",
+      "label": "Temporal Hint",
+      "li": 47,
+      "index": 7,
+      "claim": "F5, Inc. announced a strategic acquisition of Volterra in late 2019 to expand its cloud-native portfolio, signaling a pivot but with uncertain immediate revenue impact.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 15,
+        "anachronistic": true,
+        "name_used": "F5, Inc.",
+        "name_at_cutoff": "F5 Networks, Inc."
+      }
+    },
+    {
+      "key": "stock/base/48/8",
+      "label": "Temporal Hint",
+      "li": 48,
+      "index": 8,
+      "claim": "TKO Group Holdings was formed in July 2019 through the merger of WWE and Zuffa (UFC), but had not yet reported standalone financial results or traded as a public entity prior to the evaluation period start.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 26,
+        "anachronistic": true,
+        "name_used": "TKO Group Holdings",
+        "name_at_cutoff": "World Wrestling Entertainment, Inc. / Zuffa (UFC)"
+      }
+    },
+    {
+      "key": "stock/base/52/2",
+      "label": "Temporal Hint",
+      "li": 52,
+      "index": 2,
+      "claim": "Trane Technologies reported Q3 2019 revenue of $2.1 billion, a 10% increase year-over-year, and raised its full-year 2019 adjusted earnings per share guidance to a range of $4.65 to $4.75.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 37,
+        "anachronistic": true,
+        "name_used": "Trane Technologies",
+        "name_at_cutoff": "Ingersoll-Rand"
+      }
+    },
+    {
+      "key": "stock/base/52/9",
+      "label": "Temporal Hint",
+      "li": 52,
+      "index": 9,
+      "claim": "Trane Technologies completed the spin-off of its building technologies business in 2019, creating a pure-play HVAC company with a focus on high-growth markets.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 4,
+        "anachronistic": true,
+        "name_used": "Trane Technologies",
+        "name_at_cutoff": "Ingersoll-Rand plc"
+      }
+    },
+    {
+      "key": "stock/base/53/4",
+      "label": "Temporal Hint",
+      "li": 53,
+      "index": 4,
+      "claim": "Royal Caribbean Group reported Q3 2019 revenue of $2.6 billion, a 10% increase year-over-year, with record bookings for 2020.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 9,
+        "anachronistic": true,
+        "name_used": "Royal Caribbean Group",
+        "name_at_cutoff": "Royal Caribbean Cruises Ltd."
+      }
+    },
+    {
+      "key": "stock/base/61/8",
+      "label": "Temporal Hint",
+      "li": 61,
+      "index": 8,
+      "claim": "Corpay (formerly Vantiv) completed its acquisition of Worldpay in November 2019, creating a global payments processing giant with expanded scale and diversified revenue streams.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 33,
+        "anachronistic": true,
+        "name_used": "Corpay",
+        "name_at_cutoff": "Fleetcor Technologies"
+      }
+    },
+    {
+      "key": "stock/base/61/9",
+      "label": "Temporal Hint",
+      "li": 61,
+      "index": 9,
+      "claim": "Corpay (Vantiv) reported Q3 2019 net income of $136 million, a 14% increase year-over-year, with strong growth in its payment processing volumes.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 34,
+        "anachronistic": true,
+        "name_used": "Corpay",
+        "name_at_cutoff": "Fleetcor Technologies"
+      }
+    },
+    {
+      "key": "stock/base/61/10",
+      "label": "Temporal Hint",
+      "li": 61,
+      "index": 10,
+      "claim": "Corpay (Vantiv) announced a $500 million share buyback program in October 2019, indicating confidence in its post-acquisition growth trajectory.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 35,
+        "anachronistic": true,
+        "name_used": "Corpay",
+        "name_at_cutoff": "Fleetcor Technologies"
+      }
+    },
+    {
+      "key": "stock/base/61/13",
+      "label": "Temporal Hint",
+      "li": 61,
+      "index": 13,
+      "claim": "Corpay (Vantiv) had a lower market capitalization relative to its peers in late 2019, making it more sensitive to growth narratives and acquisition synergies.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 38,
+        "anachronistic": true,
+        "name_used": "Corpay",
+        "name_at_cutoff": "Fleetcor Technologies"
+      }
+    },
+    {
+      "key": "stock/base/65/0",
+      "label": "Temporal Hint",
+      "li": 65,
+      "index": 0,
+      "claim": "Meta Platforms reported Q3 2019 revenue of $17.87 billion, representing a 22% year-over-year increase, driven by strong growth in daily active users and advertising revenue.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 39,
+        "anachronistic": true,
+        "name_used": "Meta Platforms",
+        "name_at_cutoff": "Facebook, Inc."
+      }
+    },
+    {
+      "key": "stock/base/65/1",
+      "label": "Temporal Hint",
+      "li": 65,
+      "index": 1,
+      "claim": "Meta Platforms reported Q3 2019 net income of $4.6 billion, or $1.72 per share, beating analyst expectations for the quarter.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 0,
+        "anachronistic": true,
+        "name_used": "Meta Platforms",
+        "name_at_cutoff": "Facebook"
+      }
+    },
+    {
+      "key": "stock/base/65/10",
+      "label": "Temporal Hint",
+      "li": 65,
+      "index": 10,
+      "claim": "Meta Platforms had a market capitalization of approximately $160 billion as of late October 2019, reflecting high investor confidence in its growth trajectory.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 9,
+        "anachronistic": true,
+        "name_used": "Meta Platforms",
+        "name_at_cutoff": "Facebook"
+      }
+    },
+    {
+      "key": "stock/base/67/8",
+      "label": "Temporal Hint",
+      "li": 67,
+      "index": 8,
+      "claim": "Revvity (then PerkinElmer) reported Q3 2019 revenue of $1.1 billion, a 3% increase year-over-year, with growth in its diagnostics and life sciences segments.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 32,
+        "anachronistic": true,
+        "name_used": "Revvity",
+        "name_at_cutoff": "PerkinElmer"
+      }
+    },
+    {
+      "key": "stock/base/67/9",
+      "label": "Temporal Hint",
+      "li": 67,
+      "index": 9,
+      "claim": "Revvity (then PerkinElmer) announced a quarterly dividend of $0.15 per share in October 2019, maintaining its dividend policy.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 33,
+        "anachronistic": true,
+        "name_used": "Revvity",
+        "name_at_cutoff": "PerkinElmer"
+      }
+    },
+    {
+      "key": "stock/base/68/8",
+      "label": "Temporal Hint",
+      "li": 68,
+      "index": 8,
+      "claim": "Coterra Energy reported Q3 2019 net income of $130 million, or $0.13 per share, on revenue of $1.1 billion, with a focus on low-cost shale production.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 2,
+        "anachronistic": true,
+        "name_used": "Coterra Energy",
+        "name_at_cutoff": "Cabot Oil & Gas"
+      }
+    },
+    {
+      "key": "stock/base/68/9",
+      "label": "Temporal Hint",
+      "li": 68,
+      "index": 9,
+      "claim": "Coterra Energy announced in October 2019 that it would increase its quarterly dividend by 10% to $0.06 per share.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 3,
+        "anachronistic": true,
+        "name_used": "Coterra Energy",
+        "name_at_cutoff": "Cabot Oil & Gas"
+      }
+    },
+    {
+      "key": "stock/base/71/3",
+      "label": "Temporal Hint",
+      "li": 71,
+      "index": 3,
+      "claim": "Danaher Corporation announced in September 2019 the completion of its acquisition of Cytiva, a major life sciences business, for approximately $6.1 billion, significantly expanding its portfolio.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 31,
+        "anachronistic": true,
+        "name_used": "Cytiva",
+        "name_at_cutoff": "GE Biopharma"
+      }
+    },
+    {
+      "key": "stock/base/72/9",
+      "label": "Temporal Hint",
+      "li": 72,
+      "index": 9,
+      "claim": "Equifax announced in September 2019 that it would acquire the data analytics firm, Data Axle, for approximately $1.3 billion to enhance its consumer data capabilities.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 7,
+        "anachronistic": true,
+        "name_used": "Data Axle",
+        "name_at_cutoff": "Infogroup"
+      }
+    },
+    {
+      "key": "stock/base/76/6",
+      "label": "Temporal Hint",
+      "li": 76,
+      "index": 6,
+      "claim": "Marsh McLennan reported Q3 2019 net income of $660 million, or $1.05 per share, in line with analyst estimates.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 32,
+        "anachronistic": true,
+        "name_used": "Marsh McLennan",
+        "name_at_cutoff": "Marsh & McLennan Companies"
+      }
+    },
+    {
+      "key": "stock/base/76/7",
+      "label": "Temporal Hint",
+      "li": 76,
+      "index": 7,
+      "claim": "Marsh McLennan announced the acquisition of Aon's risk management business for $1.2 billion in September 2019 to expand its consulting capabilities.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 33,
+        "anachronistic": true,
+        "name_used": "Marsh McLennan",
+        "name_at_cutoff": "Marsh & McLennan Companies"
+      }
+    },
+    {
+      "key": "stock/base/79/4",
+      "label": "Temporal Hint",
+      "li": 79,
+      "index": 4,
+      "claim": "Healthpeak Properties (DOC) reported a 3.2% increase in same-store NOI for the third quarter of 2019, reflecting modest growth in its healthcare real estate portfolio.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 26,
+        "anachronistic": true,
+        "name_used": "DOC",
+        "name_at_cutoff": "PEAK"
+      }
+    },
+    {
+      "key": "stock/base/79/5",
+      "label": "Temporal Hint",
+      "li": 79,
+      "index": 5,
+      "claim": "Healthpeak Properties (DOC) maintained its quarterly dividend at $0.30 per share in October 2019, with no announced increase for the period.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 27,
+        "anachronistic": true,
+        "name_used": "DOC",
+        "name_at_cutoff": "PEAK"
+      }
+    },
+    {
+      "key": "stock/base/79/11",
+      "label": "Temporal Hint",
+      "li": 79,
+      "index": 11,
+      "claim": "Healthpeak Properties (DOC) faced headwinds in 2019 due to the expiration of certain lease agreements and slower growth in its medical office building segment compared to other REITs.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 33,
+        "anachronistic": true,
+        "name_used": "DOC",
+        "name_at_cutoff": "PEAK"
+      }
+    },
+    {
+      "key": "stock/base/81/6",
+      "label": "Temporal Hint",
+      "li": 81,
+      "index": 6,
+      "claim": "Vistra Corp (VST) reported a net loss of $1.3 billion for the full year 2019, driven by the impairment of coal assets and lower margins in its power generation segment.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 10,
+        "anachronistic": true,
+        "name_used": "Vistra Corp",
+        "name_at_cutoff": "Vistra Energy Corp."
+      }
+    },
+    {
+      "key": "stock/base/81/7",
+      "label": "Temporal Hint",
+      "li": 81,
+      "index": 7,
+      "claim": "Vistra Corp (VST) had a high debt-to-equity ratio exceeding 1.5 as of late 2019, raising concerns about its financial flexibility in a rising interest rate environment.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 11,
+        "anachronistic": true,
+        "name_used": "Vistra Corp",
+        "name_at_cutoff": "Vistra Energy Corp."
+      }
+    },
+    {
+      "key": "stock/base/81/11",
+      "label": "Temporal Hint",
+      "li": 81,
+      "index": 11,
+      "claim": "American Water Works (AWK) and Atmos Energy (ATO) are classified as regulated utilities with predictable cash flows, whereas AES and Vistra are merchant power generators with exposure to commodity price volatility.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 15,
+        "anachronistic": true,
+        "name_used": "Vistra",
+        "name_at_cutoff": "Vistra Energy"
+      }
+    },
+    {
+      "key": "stock/base/82/1",
+      "label": "Temporal Hint",
+      "li": 82,
+      "index": 1,
+      "claim": "News Corp (NWSA) completed the spin-off of its book publishing business, HarperCollins, into a separate public company named HarperCollins on April 1, 2019, leaving News Corp focused on its newspaper and book publishing segments.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 17,
+        "anachronistic": true,
+        "name_used": "HarperCollins",
+        "name_at_cutoff": "N/A (Spin-off did not occur)"
+      }
+    },
+    {
+      "key": "stock/base/82/3",
+      "label": "Temporal Hint",
+      "li": 82,
+      "index": 3,
+      "claim": "Take-Two Interactive announced the acquisition of Zynga for approximately $12.7 billion in cash and stock on October 23, 2019, signaling a major strategic expansion into mobile gaming.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 19,
+        "anachronistic": true,
+        "name_used": "Zynga acquisition",
+        "name_at_cutoff": "N/A (Deal announced 2022)"
+      }
+    },
+    {
+      "key": "stock/base/82/8",
+      "label": "Temporal Hint",
+      "li": 82,
+      "index": 8,
+      "claim": "News Corp (NWSA) reported Q2 2019 revenue of $1.3 billion, with its newspaper segment showing resilience but its book publishing segment facing headwinds prior to the HarperCollins spin-off.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 24,
+        "anachronistic": true,
+        "name_used": "HarperCollins spin-off",
+        "name_at_cutoff": "N/A (Spin-off did not occur)"
+      }
+    },
+    {
+      "key": "stock/base/82/9",
+      "label": "Temporal Hint",
+      "li": 82,
+      "index": 9,
+      "claim": "Take-Two Interactive's stock price had shown significant momentum in 2019, rising over 50% year-to-date by November 2019, driven by the success of its major game titles and the Zynga deal anticipation.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 25,
+        "anachronistic": true,
+        "name_used": "Zynga deal",
+        "name_at_cutoff": "N/A (Deal announced 2022)"
+      }
+    },
+    {
+      "key": "stock/base/87/8",
+      "label": "Temporal Hint",
+      "li": 87,
+      "index": 8,
+      "claim": "Gen Digital (GEN) reported Q3 2019 revenue of $1.02 billion, a 1% year-over-year increase, and raised its full-year 2019 revenue guidance to a range of $4.08 billion to $4.10 billion.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 7,
+        "anachronistic": true,
+        "name_used": "Gen Digital (GEN)",
+        "name_at_cutoff": "Symantec (SYMC) or NortonLifeLock (NLOK)"
+      }
+    },
+    {
+      "key": "stock/base/87/9",
+      "label": "Temporal Hint",
+      "li": 87,
+      "index": 9,
+      "claim": "Gen Digital (GEN) reported Q3 2019 non-GAAP earnings per share of $0.42, up from $0.39 in the prior year period.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 8,
+        "anachronistic": true,
+        "name_used": "Gen Digital (GEN)",
+        "name_at_cutoff": "Symantec (SYMC) or NortonLifeLock (NLOK)"
+      }
+    },
+    {
+      "key": "stock/base/87/14",
+      "label": "Temporal Hint",
+      "li": 87,
+      "index": 14,
+      "claim": "Gen Digital (GEN) had a market capitalization of approximately $10 billion as of late October 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 13,
+        "anachronistic": true,
+        "name_used": "Gen Digital (GEN)",
+        "name_at_cutoff": "Symantec (SYMC) or NortonLifeLock (NLOK)"
+      }
+    },
+    {
+      "key": "stock/base/87/20",
+      "label": "Temporal Hint",
+      "li": 87,
+      "index": 20,
+      "claim": "Gen Digital (GEN) was trading at a forward P/E ratio of approximately 18x as of late October 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 19,
+        "anachronistic": true,
+        "name_used": "Gen Digital (GEN)",
+        "name_at_cutoff": "Symantec (SYMC) or NortonLifeLock (NLOK)"
+      }
+    },
+    {
+      "key": "stock/base/92/2",
+      "label": "Temporal Hint",
+      "li": 92,
+      "index": 2,
+      "claim": "Evergy (EVRG) was formed on October 1, 2019, through the merger of Westar Energy and Evergy Kansas Central, and reported its first quarterly results for the three months ended September 30, 2019, with net income of $108 million on November 7, 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 37,
+        "anachronistic": true,
+        "name_used": "Evergy Kansas Central",
+        "name_at_cutoff": "Westar Energy"
+      }
+    },
+    {
+      "key": "stock/base/96/7",
+      "label": "Temporal Hint",
+      "li": 96,
+      "index": 7,
+      "claim": "Paramount Global (formerly ViacomCBS) reported Q3 2019 revenue of $5.3 billion, a 1% increase year-over-year, with streaming revenue growing 12%.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 16,
+        "anachronistic": true,
+        "name_used": "Paramount Global",
+        "name_at_cutoff": "Viacom"
+      }
+    },
+    {
+      "key": "stock/base/96/8",
+      "label": "Temporal Hint",
+      "li": 96,
+      "index": 8,
+      "claim": "Paramount Global announced in October 2019 that it was launching Paramount+ in 2020, a new streaming service to compete with Netflix and Disney+.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 17,
+        "anachronistic": true,
+        "name_used": "Paramount Global",
+        "name_at_cutoff": "Viacom"
+      }
+    },
+    {
+      "key": "stock/base/96/13",
+      "label": "Temporal Hint",
+      "li": 96,
+      "index": 13,
+      "claim": "Paramount Global reported in October 2019 that its Q3 2019 net income was $400 million, a 5% increase year-over-year.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 22,
+        "anachronistic": true,
+        "name_used": "Paramount Global",
+        "name_at_cutoff": "Viacom"
+      }
+    },
+    {
+      "key": "stock/rag/2/3",
+      "label": "RAG",
+      "li": 2,
+      "index": 3,
+      "claim": "Newmont Goldcorp announced that the merger would be immediately accretive to net asset value and cash flow per share, supported by a stable, profitable long-term production profile and an investment-grade balance sheet.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 7,
+        "anachronistic": true,
+        "name_used": "Newmont Goldcorp",
+        "name_at_cutoff": "Newmont"
+      }
+    },
+    {
+      "key": "stock/rag/3/8",
+      "label": "RAG",
+      "li": 3,
+      "index": 8,
+      "claim": "Evergy (EVRG) was formed in 2019 through the merger of KCP&L and Westar Energy, creating a new utility holding company serving customers in Kansas and Missouri.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 22,
+        "anachronistic": true,
+        "name_used": "Evergy",
+        "name_at_cutoff": "Westar Energy / KCP&L"
+      }
+    },
+    {
+      "key": "stock/rag/7/5",
+      "label": "RAG",
+      "li": 7,
+      "index": 5,
+      "claim": "Vistra Energy reported second-quarter 2019 net income from ongoing operations of $369 million and adjusted EBITDA of $707 million, exceeding consensus estimates.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 19,
+        "anachronistic": true,
+        "name_used": "Vistra Energy",
+        "name_at_cutoff": "Vistra Corp."
+      }
+    },
+    {
+      "key": "stock/rag/7/6",
+      "label": "RAG",
+      "li": 7,
+      "index": 6,
+      "claim": "Vistra Energy completed the acquisition of Crius Energy on July 15, 2019, expanding its retail operations to 19 states and the District of Columbia.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 20,
+        "anachronistic": true,
+        "name_used": "Vistra Energy",
+        "name_at_cutoff": "Vistra Corp."
+      }
+    },
+    {
+      "key": "stock/rag/7/7",
+      "label": "RAG",
+      "li": 7,
+      "index": 7,
+      "claim": "Vistra Energy reaffirmed its 2019 guidance for ongoing operations adjusted EBITDA of $3,220 to $3,420 million in August 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 21,
+        "anachronistic": true,
+        "name_used": "Vistra Energy",
+        "name_at_cutoff": "Vistra Corp."
+      }
+    },
+    {
+      "key": "stock/rag/11/5",
+      "label": "RAG",
+      "li": 11,
+      "index": 5,
+      "claim": "Everest Re Group reported a 47% decrease in net earnings for the third quarter of 2019, driven by $280 million in catastrophe losses from Hurricane Dorian and Typhoon Faxai.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 24,
+        "anachronistic": true,
+        "name_used": "Everest Re Group",
+        "name_at_cutoff": "Everest Re Group, Ltd."
+      }
+    },
+    {
+      "key": "stock/rag/11/6",
+      "label": "RAG",
+      "li": 11,
+      "index": 6,
+      "claim": "Everest Re Group's combined ratio deteriorated to 101.4% in the third quarter of 2019, compared to 100.0% in the prior year period.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 25,
+        "anachronistic": true,
+        "name_used": "Everest Re Group",
+        "name_at_cutoff": "Everest Re Group, Ltd."
+      }
+    },
+    {
+      "key": "stock/rag/11/7",
+      "label": "RAG",
+      "li": 11,
+      "index": 7,
+      "claim": "Everest Re Group reported gross written premiums increased by 9% to $2.4 billion during the third quarter of 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 26,
+        "anachronistic": true,
+        "name_used": "Everest Re Group",
+        "name_at_cutoff": "Everest Re Group, Ltd."
+      }
+    },
+    {
+      "key": "stock/rag/13/7",
+      "label": "RAG",
+      "li": 13,
+      "index": 7,
+      "claim": "Facebook ranked No. 34 in the 2020 Fortune 500 list with almost $86 billion in revenue, most of it coming from advertising.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 9,
+        "anachronistic": true,
+        "name_used": "Facebook",
+        "name_at_cutoff": "Facebook"
+      }
+    },
+    {
+      "key": "stock/rag/14/8",
+      "label": "RAG",
+      "li": 14,
+      "index": 8,
+      "claim": "DowDuPont outlined investment thesis and capital allocation priorities in late 2019, including the intended separation into three companies: Dow Inc., DuPont, and Corteva.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 22,
+        "anachronistic": true,
+        "name_used": "DowDuPont",
+        "name_at_cutoff": "Dow Inc. / DuPont / Corteva"
+      }
+    },
+    {
+      "key": "stock/rag/14/9",
+      "label": "RAG",
+      "li": 14,
+      "index": 9,
+      "claim": "DowDuPont disclosed in late 2019 that the separation of Dow Inc. was subject to risks including global economic conditions, fluctuating commodity prices, and the requirement to redeem $12.7 billion of notes if the separation is delayed beyond May 1, 2020.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 23,
+        "anachronistic": true,
+        "name_used": "DowDuPont",
+        "name_at_cutoff": "Dow Inc. / DuPont / Corteva"
+      }
+    },
+    {
+      "key": "stock/rag/18/10",
+      "label": "RAG",
+      "li": 18,
+      "index": 10,
+      "claim": "Paramount Skydance Corporation (PSKY) was formed via a merger agreement announced in November 2019, with the transaction expected to close in early 2020, creating a new entity combining Paramount Global and Skydance Media.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 37,
+        "anachronistic": true,
+        "name_used": "Paramount Skydance Corporation (PSKY)",
+        "name_at_cutoff": "ViacomCBS (VIAC)"
+      }
+    },
+    {
+      "key": "stock/rag/18/11",
+      "label": "RAG",
+      "li": 18,
+      "index": 11,
+      "claim": "At the time of the merger announcement in November 2019, the combined entity faced significant debt loads from both legacy companies and uncertainty regarding the integration of Skydance's film slate and Paramount's streaming strategy.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 38,
+        "anachronistic": true,
+        "name_used": "Paramount Global",
+        "name_at_cutoff": "ViacomCBS"
+      }
+    },
+    {
+      "key": "stock/rag/19/10",
+      "label": "RAG",
+      "li": 19,
+      "index": 10,
+      "claim": "APA Corporation had significant reserves in the Permian Basin, Egypt, and the North Sea, with production concentrated in the United States and international markets.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 9,
+        "anachronistic": true,
+        "name_used": "APA Corporation",
+        "name_at_cutoff": "Apache Corporation"
+      }
+    },
+    {
+      "key": "stock/rag/26/2",
+      "label": "RAG",
+      "li": 26,
+      "index": 2,
+      "claim": "Ceridian (DAY) went public in an initial offering in April 2018 that raised over $400 million.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 9,
+        "anachronistic": true,
+        "name_used": "DAY",
+        "name_at_cutoff": "CDAY"
+      }
+    },
+    {
+      "key": "stock/rag/27/4",
+      "label": "RAG",
+      "li": 27,
+      "index": 4,
+      "claim": "Elevance Health reported third quarter 2019 operating revenue of $26.4 billion, a 15% increase over the prior year quarter.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 25,
+        "anachronistic": true,
+        "name_used": "Elevance Health",
+        "name_at_cutoff": "Anthem, Inc."
+      }
+    },
+    {
+      "key": "stock/rag/27/5",
+      "label": "RAG",
+      "li": 27,
+      "index": 5,
+      "claim": "Elevance Health reported third quarter 2019 operating margin of 5.8%, a substantial improvement year-over-year.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 26,
+        "anachronistic": true,
+        "name_used": "Elevance Health",
+        "name_at_cutoff": "Anthem, Inc."
+      }
+    },
+    {
+      "key": "stock/rag/27/6",
+      "label": "RAG",
+      "li": 27,
+      "index": 6,
+      "claim": "Elevance Health reported third quarter 2019 medical loss ratio of 87.2%, an increase of 240 basis points over the prior year quarter.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 27,
+        "anachronistic": true,
+        "name_used": "Elevance Health",
+        "name_at_cutoff": "Anthem, Inc."
+      }
+    },
+    {
+      "key": "stock/rag/27/7",
+      "label": "RAG",
+      "li": 27,
+      "index": 7,
+      "claim": "Elevance Health announced in Q3 2019 that its acquisition of Beacon Health was on track to close late in the fourth quarter.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 28,
+        "anachronistic": true,
+        "name_used": "Elevance Health",
+        "name_at_cutoff": "Anthem, Inc."
+      }
+    },
+    {
+      "key": "stock/rag/33/0",
+      "label": "RAG",
+      "li": 33,
+      "index": 0,
+      "claim": "Texas Pacific Land Corporation reported total consolidated revenues of $377,164 million for the nine months ended September 30, 2019, compared to $207,019 million for the same period in 2018, representing an 82% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 20,
+        "anachronistic": true,
+        "name_used": "Texas Pacific Land Corporation",
+        "name_at_cutoff": "Texas Pacific Land Trust"
+      }
+    },
+    {
+      "key": "stock/rag/33/1",
+      "label": "RAG",
+      "li": 33,
+      "index": 1,
+      "claim": "Texas Pacific Land Corporation reported total consolidated net income of $249,606 million for the nine months ended September 30, 2019, compared to $147,056 million for the same period in 2018, representing a 70% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 21,
+        "anachronistic": true,
+        "name_used": "Texas Pacific Land Corporation",
+        "name_at_cutoff": "Texas Pacific Land Trust"
+      }
+    },
+    {
+      "key": "stock/rag/33/7",
+      "label": "RAG",
+      "li": 33,
+      "index": 7,
+      "claim": "Coterra Energy (CTRA) financial data available in late 2019 showed projected net income of $1,625 million for 2023 with a net margin of 27%, but lacked specific recent 2019 quarterly growth momentum comparable to peers.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 27,
+        "anachronistic": true,
+        "name_used": "Coterra Energy (CTRA)",
+        "name_at_cutoff": "Cabot Oil & Gas (COG)"
+      }
+    },
+    {
+      "key": "stock/rag/37/1",
+      "label": "RAG",
+      "li": 37,
+      "index": 1,
+      "claim": "Deckers Brands' Hoka One One brand sales increased 45.4% in fiscal 2019, contributing $223.1 million in revenue, while the company provided forward guidance for fiscal 2020 annual net sales between $2.095 billion and $2.120 billion.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 22,
+        "anachronistic": true,
+        "name_used": "Hoka One One",
+        "name_at_cutoff": "HOKA ONE ONE"
+      }
+    },
+    {
+      "key": "stock/rag/39/9",
+      "label": "RAG",
+      "li": 39,
+      "index": 9,
+      "claim": "Viatris (VTRS) was formed by the merger of Mylan and Pfizer's Upjohn division, with the deal expected to close in mid-2020, creating a new entity focused on cash flow and dividends.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 8,
+        "anachronistic": true,
+        "name_used": "Viatris (VTRS)",
+        "name_at_cutoff": "Mylan / Upjohn (pre-merger)"
+      }
+    },
+    {
+      "key": "stock/rag/39/10",
+      "label": "RAG",
+      "li": 39,
+      "index": 10,
+      "claim": "Cencora (COR) was formerly AmerisourceBergen, which reported strong revenue growth and raised EPS guidance in Q3 2019, but faced ongoing litigation risks related to opioids.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 9,
+        "anachronistic": true,
+        "name_used": "Cencora (COR)",
+        "name_at_cutoff": "AmerisourceBergen (ABC)"
+      }
+    },
+    {
+      "key": "stock/rag/46/3",
+      "label": "RAG",
+      "li": 46,
+      "index": 3,
+      "claim": "Tractor Supply Co. acquired the Petsense pet store chain for $116 million in cash in 2019, aiming to grow the Petsense chain by 15 to 20 percent annually.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 37,
+        "anachronistic": true,
+        "name_used": "Petsense",
+        "name_at_cutoff": "Petsense by Tractor Supply"
+      }
+    },
+    {
+      "key": "stock/rag/47/9",
+      "label": "RAG",
+      "li": 47,
+      "index": 9,
+      "claim": "Healthpeak Properties (DOC) is a diversified healthcare REIT with approximately 1,200 assets across the U.S., Canada, and the UK, with modest exposure to skilled nursing.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 15,
+        "anachronistic": true,
+        "name_used": "Healthpeak Properties (DOC)",
+        "name_at_cutoff": "Healthpeak Properties (PEAK)"
+      }
+    },
+    {
+      "key": "stock/rag/55/8",
+      "label": "RAG",
+      "li": 55,
+      "index": 8,
+      "claim": "Corpay (formerly a division of First Data) was a leading global payment processor with significant scale in B2B payments, though it was in the process of being acquired by Fiserv in a deal announced in late 2018.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 15,
+        "anachronistic": true,
+        "name_used": "Corpay",
+        "name_at_cutoff": "FleetCor Technologies"
+      }
+    },
+    {
+      "key": "stock/rag/58/9",
+      "label": "RAG",
+      "li": 58,
+      "index": 9,
+      "claim": "Royal Caribbean Group had a strong backlog of orders and new ship deliveries scheduled for 2019 and 2020, with revenue growth trends visible in prior years, though specific Q2 2019 financials were not detailed in the provided text.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 8,
+        "anachronistic": true,
+        "name_used": "Royal Caribbean Group",
+        "name_at_cutoff": "Royal Caribbean Cruises Ltd."
+      }
+    },
+    {
+      "key": "stock/rag/59/10",
+      "label": "RAG",
+      "li": 59,
+      "index": 10,
+      "claim": "Warner Bros. Discovery (WBD) is characterized by a net debt to EBITDA ratio of approximately 3.9x, significantly higher than peers like Comcast and Netflix.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 19,
+        "anachronistic": true,
+        "name_used": "Warner Bros. Discovery (WBD)",
+        "name_at_cutoff": "Discovery, Inc."
+      }
+    },
+    {
+      "key": "stock/rag/59/11",
+      "label": "RAG",
+      "li": 59,
+      "index": 11,
+      "claim": "Analysts noted that WBD's massive debt load limits its strategic flexibility and forces a defensive cost-cutting strategy.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 20,
+        "anachronistic": true,
+        "name_used": "WBD",
+        "name_at_cutoff": "Discovery, Inc."
+      }
+    },
+    {
+      "key": "stock/rag/60/8",
+      "label": "RAG",
+      "li": 60,
+      "index": 8,
+      "claim": "Broadcom (AVGO) is a large-cap semiconductor and infrastructure software company with significant exposure to cyclical semiconductor markets and ongoing integration of VMware, though specific Q1 2019 growth rates for the evaluation period context are not detailed in the provided evidence.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 29,
+        "anachronistic": true,
+        "name_used": "VMware",
+        "name_at_cutoff": "VMware (Independent Company)"
+      }
+    },
+    {
+      "key": "stock/rag/61/7",
+      "label": "RAG",
+      "li": 61,
+      "index": 7,
+      "claim": "Meta Platforms (Facebook) ranked No. 34 in the 2020 Fortune 500 list with almost $86 billion in revenue, almost all of which came from advertising.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 37,
+        "anachronistic": true,
+        "name_used": "Meta Platforms (Facebook)",
+        "name_at_cutoff": "Facebook, Inc."
+      }
+    },
+    {
+      "key": "stock/rag/62/11",
+      "label": "RAG",
+      "li": 62,
+      "index": 11,
+      "claim": "Trane Technologies (TT) is a subsidiary of Ingersoll Rand's industrial segment which was in the process of a merger with Gardner Denver to create a global leader in flow creation technologies.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 10,
+        "anachronistic": true,
+        "name_used": "Trane Technologies (TT)",
+        "name_at_cutoff": "Ingersoll-Rand plc (IR)"
+      }
+    },
+    {
+      "key": "stock/rag/64/13",
+      "label": "RAG",
+      "li": 64,
+      "index": 13,
+      "claim": "Howmet Aerospace is a company in the industrials sector, but no specific 2019 financial performance data or growth projections were available in the provided evidence prior to the cutoff date.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 33,
+        "anachronistic": true,
+        "name_used": "Howmet Aerospace",
+        "name_at_cutoff": "Arconic Inc."
+      }
+    },
+    {
+      "key": "stock/rag/67/4",
+      "label": "RAG",
+      "li": 67,
+      "index": 4,
+      "claim": "Schlumberger (SLB) had not released specific 2019 quarterly earnings data publicly before December 1, 2019, in the provided material, though industry reports indicated a challenging environment for oilfield services with reduced capital spending by operators.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 25,
+        "anachronistic": true,
+        "name_used": "SLB",
+        "name_at_cutoff": "Schlumberger"
+      }
+    },
+    {
+      "key": "stock/rag/67/5",
+      "label": "RAG",
+      "li": 67,
+      "index": 5,
+      "claim": "Coterra Energy (CTRA) was not included in the specific earnings reports or detailed project updates provided in the source material for the 2019 period, limiting the availability of concrete performance data compared to peers.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 26,
+        "anachronistic": true,
+        "name_used": "Coterra Energy (CTRA)",
+        "name_at_cutoff": "Cabot Oil & Gas"
+      }
+    },
+    {
+      "key": "stock/rag/68/6",
+      "label": "RAG",
+      "li": 68,
+      "index": 6,
+      "claim": "Gen Digital (formerly Symantec Enterprise) was acquired by Broadcom, with the transaction closing in late 2019, resulting in the company being rebranded as NortonLifeLock.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 37,
+        "anachronistic": true,
+        "name_used": "Gen Digital",
+        "name_at_cutoff": "Symantec"
+      }
+    },
+    {
+      "key": "stock/rag/76/8",
+      "label": "RAG",
+      "li": 76,
+      "index": 8,
+      "claim": "TKO Group Holdings was not a publicly traded company as of the cutoff date of December 1, 2019, as the merger between WWE and the UFC to form TKO Group Holdings was announced in September 2021.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 39,
+        "anachronistic": true,
+        "name_used": "TKO Group Holdings",
+        "name_at_cutoff": "World Wrestling Entertainment, Inc. / Zuffa, LLC (UFC)"
+      }
+    },
+    {
+      "key": "stock/rag/85/6",
+      "label": "RAG",
+      "li": 85,
+      "index": 6,
+      "claim": "Paramount Skydance Corporation (PSKY) was formed in August 2025 through an $8.4 billion merger between Paramount Global and Skydance Media, a transaction that occurred after the evaluation period cutoff.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 14,
+        "anachronistic": true,
+        "name_used": "Paramount Skydance Corporation",
+        "name_at_cutoff": "N/A (Pre-merger entities: ViacomCBS / Skydance)"
+      }
+    },
+    {
+      "key": "stock/rag/86/12",
+      "label": "RAG",
+      "li": 86,
+      "index": 12,
+      "claim": "Revvity (formerly PerkinElmer) was in the process of a major strategic transformation in 2019, having announced the separation of its life sciences business (now Revvity) from its imaging business in early 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 27,
+        "anachronistic": true,
+        "name_used": "Revvity",
+        "name_at_cutoff": "PerkinElmer"
+      }
+    },
+    {
+      "key": "stock/rag/86/13",
+      "label": "RAG",
+      "li": 86,
+      "index": 13,
+      "claim": "Revvity (PerkinElmer) reported Q1 2019 revenue of $1.1 billion, with organic growth of 2% in its life sciences segment, while facing headwinds in its imaging segment.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 28,
+        "anachronistic": true,
+        "name_used": "Revvity",
+        "name_at_cutoff": "PerkinElmer"
+      }
+    },
+    {
+      "key": "stock/rag/89/13",
+      "label": "RAG",
+      "li": 89,
+      "index": 13,
+      "claim": "Dow Inc. was spun off from DowDuPont in November 2019, becoming an independent company focused on materials science.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 26,
+        "anachronistic": true,
+        "name_used": "Dow Inc.",
+        "name_at_cutoff": "DowDuPont"
+      }
+    },
+    {
+      "key": "stock/rag/90/7",
+      "label": "RAG",
+      "li": 90,
+      "index": 7,
+      "claim": "Vistra Corp (VST) completed the acquisition of Crius Energy on July 15, 2019, expanding its retail operations to 19 states and the District of Columbia.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 35,
+        "anachronistic": true,
+        "name_used": "Vistra Corp",
+        "name_at_cutoff": "Vistra Energy Corp."
+      }
+    },
+    {
+      "key": "stock/rag/90/8",
+      "label": "RAG",
+      "li": 90,
+      "index": 8,
+      "claim": "Vistra Corp (VST) reported second quarter 2019 results above consensus and reaffirmed its 2019 guidance in August 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 36,
+        "anachronistic": true,
+        "name_used": "Vistra Corp",
+        "name_at_cutoff": "Vistra Energy Corp."
+      }
+    },
+    {
+      "key": "stock/rag/93/13",
+      "label": "RAG",
+      "li": 93,
+      "index": 13,
+      "claim": "Baker Hughes Company announced in its 2020 annual report that it made the decision to reduce its workforce to adjust for market realities and lower structural costs, with many reductions in oilfield services.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 39,
+        "anachronistic": true,
+        "name_used": "Baker Hughes Company",
+        "name_at_cutoff": "Baker Hughes, a GE company (BHGE)"
+      }
+    },
+    {
+      "key": "stock/timespec/0/4",
+      "label": "TimeSPEC",
+      "li": 0,
+      "index": 4,
+      "claim": "Newmont announced in August 2019 that its merger with Goldcorp was expected to close in the second quarter of 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 30,
+        "anachronistic": true,
+        "name_used": "Newmont",
+        "name_at_cutoff": "Newmont Goldcorp"
+      }
+    },
+    {
+      "key": "stock/timespec/0/5",
+      "label": "TimeSPEC",
+      "li": 0,
+      "index": 5,
+      "claim": "Newmont reported in August 2019 that its expected attributable gold production for 2019 is 6.5 million ounces.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 31,
+        "anachronistic": true,
+        "name_used": "Newmont",
+        "name_at_cutoff": "Newmont Goldcorp"
+      }
+    },
+    {
+      "key": "stock/timespec/0/6",
+      "label": "TimeSPEC",
+      "li": 0,
+      "index": 6,
+      "claim": "In August 2019, Newmont forecasted All-In Sustaining Costs (AISC) for 2019 to be $975 per ounce.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 32,
+        "anachronistic": true,
+        "name_used": "Newmont",
+        "name_at_cutoff": "Newmont Goldcorp"
+      }
+    },
+    {
+      "key": "stock/timespec/5/0",
+      "label": "TimeSPEC",
+      "li": 5,
+      "index": 0,
+      "claim": "Elevance Health reported operating revenue of $26.4 billion for the third quarter of 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 12,
+        "anachronistic": true,
+        "name_used": "Elevance Health",
+        "name_at_cutoff": "Anthem, Inc."
+      }
+    },
+    {
+      "key": "stock/timespec/5/1",
+      "label": "TimeSPEC",
+      "li": 5,
+      "index": 1,
+      "claim": "Elevance Health's third quarter 2019 operating revenue represented a 15% increase over the prior year quarter.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 13,
+        "anachronistic": true,
+        "name_used": "Elevance Health",
+        "name_at_cutoff": "Anthem, Inc."
+      }
+    },
+    {
+      "key": "stock/timespec/5/2",
+      "label": "TimeSPEC",
+      "li": 5,
+      "index": 2,
+      "claim": "Elevance Health reported an operating margin of 5.8% for the third quarter of 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 14,
+        "anachronistic": true,
+        "name_used": "Elevance Health",
+        "name_at_cutoff": "Anthem, Inc."
+      }
+    },
+    {
+      "key": "stock/timespec/5/3",
+      "label": "TimeSPEC",
+      "li": 5,
+      "index": 3,
+      "claim": "Elevance Health stated in Q3 2019 that it expects to exceed its long-term revenue and earnings growth targets for the full year 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 15,
+        "anachronistic": true,
+        "name_used": "Elevance Health",
+        "name_at_cutoff": "Anthem, Inc."
+      }
+    },
+    {
+      "key": "stock/timespec/8/0",
+      "label": "TimeSPEC",
+      "li": 8,
+      "index": 0,
+      "claim": "Ceridian (DAY) went public in an initial offering in April 2018.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 19,
+        "anachronistic": true,
+        "name_used": "DAY",
+        "name_at_cutoff": "CDAY"
+      }
+    },
+    {
+      "key": "stock/timespec/8/1",
+      "label": "TimeSPEC",
+      "li": 8,
+      "index": 1,
+      "claim": "Ceridian's (DAY) initial public offering raised over $400 million.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 20,
+        "anachronistic": true,
+        "name_used": "DAY",
+        "name_at_cutoff": "CDAY"
+      }
+    },
+    {
+      "key": "stock/timespec/9/12",
+      "label": "TimeSPEC",
+      "li": 9,
+      "index": 12,
+      "claim": "As of late 2019, APA Corporation had operations in the Permian Basin, Egypt, and the North Sea.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 6,
+        "anachronistic": true,
+        "name_used": "APA Corporation",
+        "name_at_cutoff": "Apache Corporation"
+      }
+    },
+    {
+      "key": "stock/timespec/9/13",
+      "label": "TimeSPEC",
+      "li": 9,
+      "index": 13,
+      "claim": "As of late 2019, a significant portion of APA Corporation's reserves were located in the Permian Basin.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 7,
+        "anachronistic": true,
+        "name_used": "APA Corporation",
+        "name_at_cutoff": "Apache Corporation"
+      }
+    },
+    {
+      "key": "stock/timespec/34/6",
+      "label": "TimeSPEC",
+      "li": 34,
+      "index": 6,
+      "claim": "Globe Life reported net income of $1.82 per diluted share for the third quarter ended September 30, 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 6,
+        "anachronistic": true,
+        "name_used": "Globe Life",
+        "name_at_cutoff": "Torchmark Corporation"
+      }
+    },
+    {
+      "key": "stock/timespec/34/7",
+      "label": "TimeSPEC",
+      "li": 34,
+      "index": 7,
+      "claim": "Globe Life reported net income of $1.55 per share in the third quarter of 2018.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 7,
+        "anachronistic": true,
+        "name_used": "Globe Life",
+        "name_at_cutoff": "Torchmark Corporation"
+      }
+    },
+    {
+      "key": "stock/timespec/34/8",
+      "label": "TimeSPEC",
+      "li": 34,
+      "index": 8,
+      "claim": "Globe Life's net sales of life insurance increased 6% in the third quarter of 2019 compared to the prior year.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 8,
+        "anachronistic": true,
+        "name_used": "Globe Life",
+        "name_at_cutoff": "Torchmark Corporation"
+      }
+    },
+    {
+      "key": "stock/timespec/34/9",
+      "label": "TimeSPEC",
+      "li": 34,
+      "index": 9,
+      "claim": "Globe Life's net health sales increased 16% in the third quarter of 2019 compared to the prior year.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 9,
+        "anachronistic": true,
+        "name_used": "Globe Life",
+        "name_at_cutoff": "Torchmark Corporation"
+      }
+    },
+    {
+      "key": "stock/timespec/40/0",
+      "label": "TimeSPEC",
+      "li": 40,
+      "index": 0,
+      "claim": "Texas Pacific Land Corporation reported total consolidated revenues of $377.2 million for the nine months ended September 30, 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 34,
+        "anachronistic": true,
+        "name_used": "Texas Pacific Land Corporation",
+        "name_at_cutoff": "Texas Pacific Land Trust"
+      }
+    },
+    {
+      "key": "stock/timespec/40/1",
+      "label": "TimeSPEC",
+      "li": 40,
+      "index": 1,
+      "claim": "Texas Pacific Land Corporation reported total consolidated revenues of $207.0 million for the nine months ended September 30, 2018.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 35,
+        "anachronistic": true,
+        "name_used": "Texas Pacific Land Corporation",
+        "name_at_cutoff": "Texas Pacific Land Trust"
+      }
+    },
+    {
+      "key": "stock/timespec/40/2",
+      "label": "TimeSPEC",
+      "li": 40,
+      "index": 2,
+      "claim": "Texas Pacific Land Corporation's revenue for the nine months ended September 30, 2019, represented an 82% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 36,
+        "anachronistic": true,
+        "name_used": "Texas Pacific Land Corporation",
+        "name_at_cutoff": "Texas Pacific Land Trust"
+      }
+    },
+    {
+      "key": "stock/timespec/40/3",
+      "label": "TimeSPEC",
+      "li": 40,
+      "index": 3,
+      "claim": "Texas Pacific Land Corporation reported total consolidated net income of $249.6 million for the nine months ended September 30, 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 37,
+        "anachronistic": true,
+        "name_used": "Texas Pacific Land Corporation",
+        "name_at_cutoff": "Texas Pacific Land Trust"
+      }
+    },
+    {
+      "key": "stock/timespec/40/4",
+      "label": "TimeSPEC",
+      "li": 40,
+      "index": 4,
+      "claim": "Texas Pacific Land Corporation reported total consolidated net income of $147.1 million for the nine months ended September 30, 2018.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 38,
+        "anachronistic": true,
+        "name_used": "Texas Pacific Land Corporation",
+        "name_at_cutoff": "Texas Pacific Land Trust"
+      }
+    },
+    {
+      "key": "stock/timespec/40/5",
+      "label": "TimeSPEC",
+      "li": 40,
+      "index": 5,
+      "claim": "Texas Pacific Land Corporation's net income for the nine months ended September 30, 2019, represented a 70% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 39,
+        "anachronistic": true,
+        "name_used": "Texas Pacific Land Corporation",
+        "name_at_cutoff": "Texas Pacific Land Trust"
+      }
+    },
+    {
+      "key": "stock/timespec/43/12",
+      "label": "TimeSPEC",
+      "li": 43,
+      "index": 12,
+      "claim": "Trane Technologies (TT) combined with Gardner Denver's industrial segment in a deal announced in 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 18,
+        "anachronistic": true,
+        "name_used": "Trane Technologies (TT)",
+        "name_at_cutoff": "Ingersoll-Rand (IR)"
+      }
+    },
+    {
+      "key": "stock/timespec/43/14",
+      "label": "TimeSPEC",
+      "li": 43,
+      "index": 14,
+      "claim": "Trane Technologies (TT) is a global leader in mission-critical flow creation and industrial technologies.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 20,
+        "anachronistic": true,
+        "name_used": "Trane Technologies (TT)",
+        "name_at_cutoff": "Ingersoll-Rand (IR)"
+      }
+    },
+    {
+      "key": "stock/timespec/57/20",
+      "label": "TimeSPEC",
+      "li": 57,
+      "index": 20,
+      "claim": "Howmet Aerospace had an enterprise value of $17.66 billion as of 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 22,
+        "anachronistic": true,
+        "name_used": "Howmet Aerospace",
+        "name_at_cutoff": "Arconic Inc."
+      }
+    },
+    {
+      "key": "stock/timespec/58/11",
+      "label": "TimeSPEC",
+      "li": 58,
+      "index": 11,
+      "claim": "Meta Platforms reported 2018 revenue of $55.838 billion.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 38,
+        "anachronistic": true,
+        "name_used": "Meta Platforms",
+        "name_at_cutoff": "Facebook, Inc."
+      }
+    },
+    {
+      "key": "stock/timespec/60/20",
+      "label": "TimeSPEC",
+      "li": 60,
+      "index": 20,
+      "claim": "Healthpeak Properties (DOC) is a publicly traded REIT focused on healthcare real estate.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 5,
+        "anachronistic": true,
+        "name_used": "Healthpeak Properties (DOC)",
+        "name_at_cutoff": "HCP, Inc. (HCP)"
+      }
+    },
+    {
+      "key": "stock/timespec/61/14",
+      "label": "TimeSPEC",
+      "li": 61,
+      "index": 14,
+      "claim": "Since 2015, Dow Inc. has been focusing resources on specialty chemicals with profit margins of at least 20%.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 20,
+        "anachronistic": true,
+        "name_used": "Dow Inc.",
+        "name_at_cutoff": "The Dow Chemical Company"
+      }
+    },
+    {
+      "key": "stock/timespec/61/15",
+      "label": "TimeSPEC",
+      "li": 61,
+      "index": 15,
+      "claim": "In September 2018, Dow Inc. shares traded at over $67 per share.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 21,
+        "anachronistic": true,
+        "name_used": "Dow Inc.",
+        "name_at_cutoff": "DowDuPont"
+      }
+    },
+    {
+      "key": "stock/timespec/61/16",
+      "label": "TimeSPEC",
+      "li": 61,
+      "index": 16,
+      "claim": "In September 2018, Dow Inc. had a market capitalization of over $121.1 billion.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 22,
+        "anachronistic": true,
+        "name_used": "Dow Inc.",
+        "name_at_cutoff": "DowDuPont"
+      }
+    },
+    {
+      "key": "stock/timespec/64/0",
+      "label": "TimeSPEC",
+      "li": 64,
+      "index": 0,
+      "claim": "FLEETCOR (now Corpay) reported Q4 2018 total GAAP revenues of $643.4 million.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 17,
+        "anachronistic": true,
+        "name_used": "Corpay",
+        "name_at_cutoff": "FLEETCOR Technologies, Inc."
+      }
+    },
+    {
+      "key": "stock/timespec/64/1",
+      "label": "TimeSPEC",
+      "li": 64,
+      "index": 1,
+      "claim": "FLEETCOR (now Corpay) reported Q4 2018 total Non-GAAP revenues of $679.9 million.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 18,
+        "anachronistic": true,
+        "name_used": "Corpay",
+        "name_at_cutoff": "FLEETCOR Technologies, Inc."
+      }
+    },
+    {
+      "key": "stock/timespec/64/19",
+      "label": "TimeSPEC",
+      "li": 64,
+      "index": 19,
+      "claim": "Morgan Stanley owns E*TRADE, which operates as a subsidiary.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 36,
+        "anachronistic": true,
+        "name_used": "Morgan Stanley owns E*TRADE",
+        "name_at_cutoff": "E*TRADE Financial Corporation (Independent)"
+      }
+    },
+    {
+      "key": "stock/timespec/69/6",
+      "label": "TimeSPEC",
+      "li": 69,
+      "index": 6,
+      "claim": "Healthpeak Properties announced in October 2019 a definitive agreement to acquire Brookdale's 51% interest in 13 CCRCs for $541 million.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 5,
+        "anachronistic": true,
+        "name_used": "Healthpeak Properties",
+        "name_at_cutoff": "HCP, Inc."
+      }
+    },
+    {
+      "key": "stock/timespec/69/7",
+      "label": "TimeSPEC",
+      "li": 69,
+      "index": 7,
+      "claim": "Healthpeak Properties entered into a definitive agreement in October 2019 to sell its remaining 49% interest in U.K. holdings to Omega Healthcare Investors for net proceeds of approximately $90 million.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 6,
+        "anachronistic": true,
+        "name_used": "Healthpeak Properties",
+        "name_at_cutoff": "HCP, Inc."
+      }
+    },
+    {
+      "key": "stock/timespec/69/8",
+      "label": "TimeSPEC",
+      "li": 69,
+      "index": 8,
+      "claim": "Healthpeak Properties announced in September 2019 an agreement to acquire a 224,000 square foot laboratory building in Boston for $332.5 million.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 7,
+        "anachronistic": true,
+        "name_used": "Healthpeak Properties",
+        "name_at_cutoff": "HCP, Inc."
+      }
+    },
+    {
+      "key": "stock/timespec/69/9",
+      "label": "TimeSPEC",
+      "li": 69,
+      "index": 9,
+      "claim": "The Healthpeak Properties acquisition of the Boston laboratory building had a year one cash capitalization rate of 4.8%.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 8,
+        "anachronistic": true,
+        "name_used": "Healthpeak Properties",
+        "name_at_cutoff": "HCP, Inc."
+      }
+    },
+    {
+      "key": "stock/timespec/72/16",
+      "label": "TimeSPEC",
+      "li": 72,
+      "index": 16,
+      "claim": "Broadcom acquired Gen Digital (formerly Symantec Enterprise).",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 27,
+        "anachronistic": true,
+        "name_used": "Gen Digital",
+        "name_at_cutoff": "Symantec"
+      }
+    },
+    {
+      "key": "stock/timespec/72/17",
+      "label": "TimeSPEC",
+      "li": 72,
+      "index": 17,
+      "claim": "The acquisition of Gen Digital by Broadcom closed in late 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 28,
+        "anachronistic": true,
+        "name_used": "Gen Digital",
+        "name_at_cutoff": "Symantec"
+      }
+    },
+    {
+      "key": "stock/timespec/72/18",
+      "label": "TimeSPEC",
+      "li": 72,
+      "index": 18,
+      "claim": "The acquisition of Gen Digital by Broadcom separated the enterprise business from the consumer business.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 29,
+        "anachronistic": true,
+        "name_used": "Gen Digital",
+        "name_at_cutoff": "Symantec"
+      }
+    },
+    {
+      "key": "stock/timespec/82/6",
+      "label": "TimeSPEC",
+      "li": 82,
+      "index": 6,
+      "claim": "DaVita Healthcare Partners agreed to pay $450 million to settle a False Claims Act lawsuit regarding the intentional wasting of medicine.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 13,
+        "anachronistic": true,
+        "name_used": "DaVita Healthcare Partners",
+        "name_at_cutoff": "DaVita Inc."
+      }
+    },
+    {
+      "key": "stock/timespec/93/22",
+      "label": "TimeSPEC",
+      "li": 93,
+      "index": 22,
+      "claim": "Paramount Skydance Corporation (PSKY) is an entity resulting from a merger.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 19,
+        "anachronistic": true,
+        "name_used": "Paramount Skydance Corporation (PSKY)",
+        "name_at_cutoff": "ViacomCBS / Skydance Media"
+      }
+    },
+    {
+      "key": "stock/tempo/2/2",
+      "label": "TEMPO",
+      "li": 2,
+      "index": 2,
+      "claim": "BXP, Inc. (BXP) reported Q3 2019 revenue of $145.2 million, representing a 3% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 31,
+        "anachronistic": true,
+        "name_used": "BXP, Inc.",
+        "name_at_cutoff": "Boston Properties, Inc."
+      }
+    },
+    {
+      "key": "stock/tempo/2/7",
+      "label": "TEMPO",
+      "li": 2,
+      "index": 7,
+      "claim": "BXP, Inc. (BXP) had a price-to-earnings ratio of 18.5 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 36,
+        "anachronistic": true,
+        "name_used": "BXP, Inc.",
+        "name_at_cutoff": "Boston Properties, Inc."
+      }
+    },
+    {
+      "key": "stock/tempo/2/12",
+      "label": "TEMPO",
+      "li": 2,
+      "index": 12,
+      "claim": "BXP, Inc. (BXP) had a dividend yield of 2.8% as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 1,
+        "anachronistic": true,
+        "name_used": "BXP, Inc.",
+        "name_at_cutoff": "Boston Properties, Inc."
+      }
+    },
+    {
+      "key": "stock/tempo/2/17",
+      "label": "TEMPO",
+      "li": 2,
+      "index": 17,
+      "claim": "BXP, Inc. (BXP) had a debt-to-equity ratio of 0.6 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 6,
+        "anachronistic": true,
+        "name_used": "BXP, Inc.",
+        "name_at_cutoff": "Boston Properties, Inc."
+      }
+    },
+    {
+      "key": "stock/tempo/3/3",
+      "label": "TEMPO",
+      "li": 3,
+      "index": 3,
+      "claim": "Bunge Global (BG) reported Q3 2019 revenue of $1.8 billion, representing a 3.4% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 12,
+        "anachronistic": true,
+        "name_used": "Bunge Global",
+        "name_at_cutoff": "Bunge Limited"
+      }
+    },
+    {
+      "key": "stock/tempo/3/8",
+      "label": "TEMPO",
+      "li": 3,
+      "index": 8,
+      "claim": "Bunge Global (BG) has a market capitalization of $10 billion as of November 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 17,
+        "anachronistic": true,
+        "name_used": "Bunge Global",
+        "name_at_cutoff": "Bunge Limited"
+      }
+    },
+    {
+      "key": "stock/tempo/3/13",
+      "label": "TEMPO",
+      "li": 3,
+      "index": 13,
+      "claim": "Bunge Global (BG) has a dividend yield of 2.1% as of November 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 22,
+        "anachronistic": true,
+        "name_used": "Bunge Global",
+        "name_at_cutoff": "Bunge Limited"
+      }
+    },
+    {
+      "key": "stock/tempo/3/18",
+      "label": "TEMPO",
+      "li": 3,
+      "index": 18,
+      "claim": "Bunge Global (BG) has a price-to-earnings ratio of 15.0 as of November 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 27,
+        "anachronistic": true,
+        "name_used": "Bunge Global",
+        "name_at_cutoff": "Bunge Limited"
+      }
+    },
+    {
+      "key": "stock/tempo/5/0",
+      "label": "TEMPO",
+      "li": 5,
+      "index": 0,
+      "claim": "Vistra Corp. (VST) reported Q3 2019 revenue of $1.2 billion, representing a 5% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 9,
+        "anachronistic": true,
+        "name_used": "Vistra Corp.",
+        "name_at_cutoff": "Vistra Energy Corp."
+      }
+    },
+    {
+      "key": "stock/tempo/5/5",
+      "label": "TEMPO",
+      "li": 5,
+      "index": 5,
+      "claim": "Vistra Corp. (VST) had a debt-to-equity ratio of 1.2 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 14,
+        "anachronistic": true,
+        "name_used": "Vistra Corp.",
+        "name_at_cutoff": "Vistra Energy Corp."
+      }
+    },
+    {
+      "key": "stock/tempo/5/10",
+      "label": "TEMPO",
+      "li": 5,
+      "index": 10,
+      "claim": "Vistra Corp. (VST) had a dividend yield of 2.5% as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 19,
+        "anachronistic": true,
+        "name_used": "Vistra Corp.",
+        "name_at_cutoff": "Vistra Energy Corp."
+      }
+    },
+    {
+      "key": "stock/tempo/5/15",
+      "label": "TEMPO",
+      "li": 5,
+      "index": 15,
+      "claim": "Vistra Corp. (VST) had a price-to-earnings ratio of 10.0 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 24,
+        "anachronistic": true,
+        "name_used": "Vistra Corp.",
+        "name_at_cutoff": "Vistra Energy Corp."
+      }
+    },
+    {
+      "key": "stock/tempo/6/4",
+      "label": "TEMPO",
+      "li": 6,
+      "index": 4,
+      "claim": "Ball Corporation (BALL) reported Q3 2019 revenue of $1.8 billion, representing a 4% increase year-over-year.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 33,
+        "anachronistic": true,
+        "name_used": "BALL",
+        "name_at_cutoff": "BLL"
+      }
+    },
+    {
+      "key": "stock/tempo/6/9",
+      "label": "TEMPO",
+      "li": 6,
+      "index": 9,
+      "claim": "Ball Corporation (BALL) had a debt-to-equity ratio of 0.9 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 38,
+        "anachronistic": true,
+        "name_used": "BALL",
+        "name_at_cutoff": "BLL"
+      }
+    },
+    {
+      "key": "stock/tempo/6/14",
+      "label": "TEMPO",
+      "li": 6,
+      "index": 14,
+      "claim": "Ball Corporation (BALL) had a price-to-earnings ratio of 11 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 3,
+        "anachronistic": true,
+        "name_used": "Ball Corporation (BALL)",
+        "name_at_cutoff": "Ball Corporation (BLL)"
+      }
+    },
+    {
+      "key": "stock/tempo/6/19",
+      "label": "TEMPO",
+      "li": 6,
+      "index": 19,
+      "claim": "Ball Corporation (BALL) had a dividend yield of 2% as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 8,
+        "anachronistic": true,
+        "name_used": "Ball Corporation (BALL)",
+        "name_at_cutoff": "Ball Corporation (BLL)"
+      }
+    },
+    {
+      "key": "stock/tempo/9/1",
+      "label": "TEMPO",
+      "li": 9,
+      "index": 1,
+      "claim": "Willis Towers Watson (WTW) reported Q3 2019 net income of $0.8 billion, representing a 5% increase year-over-year.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 10,
+        "anachronistic": true,
+        "name_used": "WTW",
+        "name_at_cutoff": "WLTW"
+      }
+    },
+    {
+      "key": "stock/tempo/9/3",
+      "label": "TEMPO",
+      "li": 9,
+      "index": 3,
+      "claim": "Everest Group (EG) reported Q3 2019 net income of $0.6 billion, representing a 8% increase year-over-year.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 12,
+        "anachronistic": true,
+        "name_used": "Everest Group (EG)",
+        "name_at_cutoff": "Everest Re Group (RE)"
+      }
+    },
+    {
+      "key": "stock/tempo/9/6",
+      "label": "TEMPO",
+      "li": 9,
+      "index": 6,
+      "claim": "Willis Towers Watson (WTW) has a price-to-earnings ratio of 15.0 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 15,
+        "anachronistic": true,
+        "name_used": "WTW",
+        "name_at_cutoff": "WLTW"
+      }
+    },
+    {
+      "key": "stock/tempo/9/8",
+      "label": "TEMPO",
+      "li": 9,
+      "index": 8,
+      "claim": "Everest Group (EG) has a price-to-earnings ratio of 18.0 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 17,
+        "anachronistic": true,
+        "name_used": "Everest Group (EG)",
+        "name_at_cutoff": "Everest Re Group (RE)"
+      }
+    },
+    {
+      "key": "stock/tempo/9/11",
+      "label": "TEMPO",
+      "li": 9,
+      "index": 11,
+      "claim": "Willis Towers Watson (WTW) has a dividend yield of 3.0% as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 20,
+        "anachronistic": true,
+        "name_used": "WTW",
+        "name_at_cutoff": "WLTW"
+      }
+    },
+    {
+      "key": "stock/tempo/9/13",
+      "label": "TEMPO",
+      "li": 9,
+      "index": 13,
+      "claim": "Everest Group (EG) has a dividend yield of 2.0% as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 22,
+        "anachronistic": true,
+        "name_used": "Everest Group (EG)",
+        "name_at_cutoff": "Everest Re Group (RE)"
+      }
+    },
+    {
+      "key": "stock/tempo/10/3",
+      "label": "TEMPO",
+      "li": 10,
+      "index": 3,
+      "claim": "Dayforce reported Q3 2019 revenue of $100 million, representing a 10% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 27,
+        "anachronistic": true,
+        "name_used": "Dayforce",
+        "name_at_cutoff": "Ceridian"
+      }
+    },
+    {
+      "key": "stock/tempo/10/8",
+      "label": "TEMPO",
+      "li": 10,
+      "index": 8,
+      "claim": "Dayforce has a dividend yield of 0% as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 32,
+        "anachronistic": true,
+        "name_used": "Dayforce",
+        "name_at_cutoff": "Ceridian"
+      }
+    },
+    {
+      "key": "stock/tempo/10/13",
+      "label": "TEMPO",
+      "li": 10,
+      "index": 13,
+      "claim": "Dayforce has a price-to-earnings ratio of 25 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 37,
+        "anachronistic": true,
+        "name_used": "Dayforce",
+        "name_at_cutoff": "Ceridian"
+      }
+    },
+    {
+      "key": "stock/tempo/10/18",
+      "label": "TEMPO",
+      "li": 10,
+      "index": 18,
+      "claim": "Dayforce has a debt-to-equity ratio of 0.8 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 2,
+        "anachronistic": true,
+        "name_used": "Dayforce",
+        "name_at_cutoff": "Ceridian HCM Holding Inc."
+      }
+    },
+    {
+      "key": "stock/tempo/15/3",
+      "label": "TEMPO",
+      "li": 15,
+      "index": 3,
+      "claim": "Molson Coors Beverage Company (TAP) reported Q3 2019 revenue of $1.2 billion, representing a 1.5% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 7,
+        "anachronistic": true,
+        "name_used": "Molson Coors Beverage Company",
+        "name_at_cutoff": "Molson Coors Brewing Company"
+      }
+    },
+    {
+      "key": "stock/tempo/15/8",
+      "label": "TEMPO",
+      "li": 15,
+      "index": 8,
+      "claim": "Molson Coors Beverage Company (TAP) had a P/E ratio of 16.8 as of November 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 12,
+        "anachronistic": true,
+        "name_used": "Molson Coors Beverage Company",
+        "name_at_cutoff": "Molson Coors Brewing Company"
+      }
+    },
+    {
+      "key": "stock/tempo/15/13",
+      "label": "TEMPO",
+      "li": 15,
+      "index": 13,
+      "claim": "Molson Coors Beverage Company (TAP) had a dividend yield of 3.2% as of November 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 17,
+        "anachronistic": true,
+        "name_used": "Molson Coors Beverage Company",
+        "name_at_cutoff": "Molson Coors Brewing Company"
+      }
+    },
+    {
+      "key": "stock/tempo/15/18",
+      "label": "TEMPO",
+      "li": 15,
+      "index": 18,
+      "claim": "Molson Coors Beverage Company (TAP) had a debt-to-equity ratio of 1.0 as of November 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 22,
+        "anachronistic": true,
+        "name_used": "Molson Coors Beverage Company",
+        "name_at_cutoff": "Molson Coors Brewing Company"
+      }
+    },
+    {
+      "key": "stock/tempo/27/6",
+      "label": "TEMPO",
+      "li": 27,
+      "index": 6,
+      "claim": "Paramount Skydance Corporation (PSKY) reported Q3 2019 revenue of $1.1 billion, representing a 5.2% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 30,
+        "anachronistic": true,
+        "name_used": "Paramount Skydance Corporation (PSKY)",
+        "name_at_cutoff": "ViacomCBS (VIAC)"
+      }
+    },
+    {
+      "key": "stock/tempo/27/7",
+      "label": "TEMPO",
+      "li": 27,
+      "index": 7,
+      "claim": "Paramount Skydance Corporation (PSKY) reported Q3 2019 net income of $100 million, representing a 10.2% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 31,
+        "anachronistic": true,
+        "name_used": "Paramount Skydance Corporation (PSKY)",
+        "name_at_cutoff": "ViacomCBS (VIAC)"
+      }
+    },
+    {
+      "key": "stock/tempo/27/13",
+      "label": "TEMPO",
+      "li": 27,
+      "index": 13,
+      "claim": "Paramount Skydance Corporation (PSKY) has a dividend yield of 0.0% as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 37,
+        "anachronistic": true,
+        "name_used": "Paramount Skydance Corporation (PSKY)",
+        "name_at_cutoff": "ViacomCBS (VIAC)"
+      }
+    },
+    {
+      "key": "stock/tempo/27/18",
+      "label": "TEMPO",
+      "li": 27,
+      "index": 18,
+      "claim": "Paramount Skydance Corporation (PSKY) has a market capitalization of $10 billion as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 2,
+        "anachronistic": true,
+        "name_used": "Paramount Skydance Corporation (PSKY)",
+        "name_at_cutoff": "ViacomCBS (VIAC)"
+      }
+    },
+    {
+      "key": "stock/tempo/30/0",
+      "label": "TEMPO",
+      "li": 30,
+      "index": 0,
+      "claim": "Meta Platforms (META) reported Q3 2019 revenue of $17.87 billion, representing 23% year-over-year growth.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 4,
+        "anachronistic": true,
+        "name_used": "Meta Platforms (META)",
+        "name_at_cutoff": "Facebook (FB)"
+      }
+    },
+    {
+      "key": "stock/tempo/30/1",
+      "label": "TEMPO",
+      "li": 30,
+      "index": 1,
+      "claim": "Meta Platforms (META) reported Q3 2019 net income of $4.3 billion, representing 25% year-over-year growth.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 5,
+        "anachronistic": true,
+        "name_used": "Meta Platforms (META)",
+        "name_at_cutoff": "Facebook (FB)"
+      }
+    },
+    {
+      "key": "stock/tempo/30/10",
+      "label": "TEMPO",
+      "li": 30,
+      "index": 10,
+      "claim": "Meta Platforms (META) had a price-to-earnings ratio of 25x as of October 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 14,
+        "anachronistic": true,
+        "name_used": "Meta Platforms (META)",
+        "name_at_cutoff": "Facebook (FB)"
+      }
+    },
+    {
+      "key": "stock/tempo/30/15",
+      "label": "TEMPO",
+      "li": 30,
+      "index": 15,
+      "claim": "Meta Platforms (META) had a market capitalization of $180 billion as of October 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 19,
+        "anachronistic": true,
+        "name_used": "Meta Platforms (META)",
+        "name_at_cutoff": "Facebook (FB)"
+      }
+    },
+    {
+      "key": "stock/tempo/32/2",
+      "label": "TEMPO",
+      "li": 32,
+      "index": 2,
+      "claim": "APA Corporation (APA) reported Q3 2019 revenue of $1.1 billion, representing a 10% increase year-over-year.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 11,
+        "anachronistic": true,
+        "name_used": "APA Corporation",
+        "name_at_cutoff": "Apache Corporation"
+      }
+    },
+    {
+      "key": "stock/tempo/32/7",
+      "label": "TEMPO",
+      "li": 32,
+      "index": 7,
+      "claim": "APA Corporation (APA) has a debt-to-equity ratio of 1.2 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 16,
+        "anachronistic": true,
+        "name_used": "APA Corporation",
+        "name_at_cutoff": "Apache Corporation"
+      }
+    },
+    {
+      "key": "stock/tempo/32/12",
+      "label": "TEMPO",
+      "li": 32,
+      "index": 12,
+      "claim": "APA Corporation (APA) has a dividend yield of 1.5% as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 21,
+        "anachronistic": true,
+        "name_used": "APA Corporation",
+        "name_at_cutoff": "Apache Corporation"
+      }
+    },
+    {
+      "key": "stock/tempo/32/17",
+      "label": "TEMPO",
+      "li": 32,
+      "index": 17,
+      "claim": "APA Corporation (APA) has a price-to-earnings ratio of 8.0 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 26,
+        "anachronistic": true,
+        "name_used": "APA Corporation",
+        "name_at_cutoff": "Apache Corporation"
+      }
+    },
+    {
+      "key": "stock/tempo/34/0",
+      "label": "TEMPO",
+      "li": 34,
+      "index": 0,
+      "claim": "Corpay (CPAY) was founded in 2014 and operated as a private company until its IPO in 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 9,
+        "anachronistic": true,
+        "name_used": "Corpay (CPAY)",
+        "name_at_cutoff": "Fleetcor Technologies (FLT)"
+      }
+    },
+    {
+      "key": "stock/tempo/34/9",
+      "label": "TEMPO",
+      "li": 34,
+      "index": 9,
+      "claim": "Corpay (CPAY) had a market capitalization of $10 billion as of its IPO in 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 18,
+        "anachronistic": true,
+        "name_used": "Corpay (CPAY)",
+        "name_at_cutoff": "Fleetcor Technologies (FLT)"
+      }
+    },
+    {
+      "key": "stock/tempo/35/2",
+      "label": "TEMPO",
+      "li": 35,
+      "index": 2,
+      "claim": "F5, Inc. (FFIV) reported Q3 2019 revenue of $300 million, representing a 5% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 21,
+        "anachronistic": true,
+        "name_used": "F5, Inc.",
+        "name_at_cutoff": "F5 Networks, Inc."
+      }
+    },
+    {
+      "key": "stock/tempo/35/7",
+      "label": "TEMPO",
+      "li": 35,
+      "index": 7,
+      "claim": "F5, Inc. (FFIV) has a price-to-earnings ratio of 25x as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 26,
+        "anachronistic": true,
+        "name_used": "F5, Inc.",
+        "name_at_cutoff": "F5 Networks, Inc."
+      }
+    },
+    {
+      "key": "stock/tempo/35/12",
+      "label": "TEMPO",
+      "li": 35,
+      "index": 12,
+      "claim": "F5, Inc. (FFIV) has a debt-to-equity ratio of 0.4 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 31,
+        "anachronistic": true,
+        "name_used": "F5, Inc.",
+        "name_at_cutoff": "F5 Networks, Inc."
+      }
+    },
+    {
+      "key": "stock/tempo/35/17",
+      "label": "TEMPO",
+      "li": 35,
+      "index": 17,
+      "claim": "F5, Inc. (FFIV) has a return on equity of 12% as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 36,
+        "anachronistic": true,
+        "name_used": "F5, Inc.",
+        "name_at_cutoff": "F5 Networks, Inc."
+      }
+    },
+    {
+      "key": "stock/tempo/37/0",
+      "label": "TEMPO",
+      "li": 37,
+      "index": 0,
+      "claim": "Coterra (CTRA) reported Q3 2019 revenue of $1.2 billion, representing a 10% increase year-over-year.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 19,
+        "anachronistic": true,
+        "name_used": "Coterra (CTRA)",
+        "name_at_cutoff": "Cabot Oil & Gas (COG)"
+      }
+    },
+    {
+      "key": "stock/tempo/37/2",
+      "label": "TEMPO",
+      "li": 37,
+      "index": 2,
+      "claim": "Texas Pacific Land Corporation (TPL) reported Q3 2019 revenue of $1.5 billion, representing a 15% increase year-over-year.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 21,
+        "anachronistic": true,
+        "name_used": "Texas Pacific Land Corporation",
+        "name_at_cutoff": "Texas Pacific Land Trust"
+      }
+    },
+    {
+      "key": "stock/tempo/37/5",
+      "label": "TEMPO",
+      "li": 37,
+      "index": 5,
+      "claim": "Coterra (CTRA) had a debt-to-equity ratio of 0.6 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 24,
+        "anachronistic": true,
+        "name_used": "Coterra (CTRA)",
+        "name_at_cutoff": "Cabot Oil & Gas (COG)"
+      }
+    },
+    {
+      "key": "stock/tempo/37/7",
+      "label": "TEMPO",
+      "li": 37,
+      "index": 7,
+      "claim": "Texas Pacific Land Corporation (TPL) had a debt-to-equity ratio of 0.4 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 26,
+        "anachronistic": true,
+        "name_used": "Texas Pacific Land Corporation",
+        "name_at_cutoff": "Texas Pacific Land Trust"
+      }
+    },
+    {
+      "key": "stock/tempo/37/10",
+      "label": "TEMPO",
+      "li": 37,
+      "index": 10,
+      "claim": "Coterra (CTRA) had a price-to-earnings ratio of 10 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 29,
+        "anachronistic": true,
+        "name_used": "Coterra (CTRA)",
+        "name_at_cutoff": "Cabot Oil & Gas (COG)"
+      }
+    },
+    {
+      "key": "stock/tempo/37/12",
+      "label": "TEMPO",
+      "li": 37,
+      "index": 12,
+      "claim": "Texas Pacific Land Corporation (TPL) had a price-to-earnings ratio of 8 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 31,
+        "anachronistic": true,
+        "name_used": "Texas Pacific Land Corporation",
+        "name_at_cutoff": "Texas Pacific Land Trust"
+      }
+    },
+    {
+      "key": "stock/tempo/37/15",
+      "label": "TEMPO",
+      "li": 37,
+      "index": 15,
+      "claim": "Coterra (CTRA) had a dividend yield of 4% as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 34,
+        "anachronistic": true,
+        "name_used": "Coterra (CTRA)",
+        "name_at_cutoff": "Cabot Oil & Gas (COG)"
+      }
+    },
+    {
+      "key": "stock/tempo/37/17",
+      "label": "TEMPO",
+      "li": 37,
+      "index": 17,
+      "claim": "Texas Pacific Land Corporation (TPL) had a dividend yield of 3% as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 36,
+        "anachronistic": true,
+        "name_used": "Texas Pacific Land Corporation",
+        "name_at_cutoff": "Texas Pacific Land Trust"
+      }
+    },
+    {
+      "key": "stock/tempo/40/3",
+      "label": "TEMPO",
+      "li": 40,
+      "index": 3,
+      "claim": "Globe Life (GL) reported Q3 2019 revenue of $1.0 billion, representing a 2% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 2,
+        "anachronistic": true,
+        "name_used": "Globe Life (GL)",
+        "name_at_cutoff": "Torchmark Corporation (TMK)"
+      }
+    },
+    {
+      "key": "stock/tempo/40/8",
+      "label": "TEMPO",
+      "li": 40,
+      "index": 8,
+      "claim": "Globe Life (GL) had a P/E ratio of 10x as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 7,
+        "anachronistic": true,
+        "name_used": "Globe Life (GL)",
+        "name_at_cutoff": "Torchmark Corporation (TMK)"
+      }
+    },
+    {
+      "key": "stock/tempo/40/13",
+      "label": "TEMPO",
+      "li": 40,
+      "index": 13,
+      "claim": "Globe Life (GL) had an ROE of 6% as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 12,
+        "anachronistic": true,
+        "name_used": "Globe Life (GL)",
+        "name_at_cutoff": "Torchmark Corporation (TMK)"
+      }
+    },
+    {
+      "key": "stock/tempo/40/18",
+      "label": "TEMPO",
+      "li": 40,
+      "index": 18,
+      "claim": "Globe Life (GL) had a debt-to-equity ratio of 0.1 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 17,
+        "anachronistic": true,
+        "name_used": "Globe Life (GL)",
+        "name_at_cutoff": "Torchmark Corporation (TMK)"
+      }
+    },
+    {
+      "key": "stock/tempo/45/0",
+      "label": "TEMPO",
+      "li": 45,
+      "index": 0,
+      "claim": "Jacobs Solutions (J) reported Q3 2019 revenue of $1.2 billion, representing a 5% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 19,
+        "anachronistic": true,
+        "name_used": "Jacobs Solutions",
+        "name_at_cutoff": "Jacobs Engineering Group Inc."
+      }
+    },
+    {
+      "key": "stock/tempo/45/1",
+      "label": "TEMPO",
+      "li": 45,
+      "index": 1,
+      "claim": "Howmet Aerospace (HWM) reported Q3 2019 revenue of $800 million, representing a 3% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 20,
+        "anachronistic": true,
+        "name_used": "Howmet Aerospace",
+        "name_at_cutoff": "Arconic Inc."
+      }
+    },
+    {
+      "key": "stock/tempo/45/2",
+      "label": "TEMPO",
+      "li": 45,
+      "index": 2,
+      "claim": "United Airlines Holdings (UAL) reported Q3 2019 revenue of $10 billion, representing a 2% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 21,
+        "anachronistic": true,
+        "name_used": "United Airlines Holdings",
+        "name_at_cutoff": "United Continental Holdings"
+      }
+    },
+    {
+      "key": "stock/tempo/45/5",
+      "label": "TEMPO",
+      "li": 45,
+      "index": 5,
+      "claim": "Jacobs Solutions (J) had a P/E ratio of 15 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 24,
+        "anachronistic": true,
+        "name_used": "Jacobs Solutions",
+        "name_at_cutoff": "Jacobs Engineering Group Inc."
+      }
+    },
+    {
+      "key": "stock/tempo/45/6",
+      "label": "TEMPO",
+      "li": 45,
+      "index": 6,
+      "claim": "Howmet Aerospace (HWM) had a P/E ratio of 12 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 25,
+        "anachronistic": true,
+        "name_used": "Howmet Aerospace",
+        "name_at_cutoff": "Arconic Inc."
+      }
+    },
+    {
+      "key": "stock/tempo/45/7",
+      "label": "TEMPO",
+      "li": 45,
+      "index": 7,
+      "claim": "United Airlines Holdings (UAL) had a P/E ratio of 10 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 26,
+        "anachronistic": true,
+        "name_used": "United Airlines Holdings",
+        "name_at_cutoff": "United Continental Holdings"
+      }
+    },
+    {
+      "key": "stock/tempo/45/10",
+      "label": "TEMPO",
+      "li": 45,
+      "index": 10,
+      "claim": "Jacobs Solutions (J) had a dividend yield of 2% as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 29,
+        "anachronistic": true,
+        "name_used": "Jacobs Solutions",
+        "name_at_cutoff": "Jacobs Engineering Group Inc."
+      }
+    },
+    {
+      "key": "stock/tempo/45/11",
+      "label": "TEMPO",
+      "li": 45,
+      "index": 11,
+      "claim": "Howmet Aerospace (HWM) had a dividend yield of 1% as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 30,
+        "anachronistic": true,
+        "name_used": "Howmet Aerospace",
+        "name_at_cutoff": "Arconic Inc."
+      }
+    },
+    {
+      "key": "stock/tempo/45/12",
+      "label": "TEMPO",
+      "li": 45,
+      "index": 12,
+      "claim": "United Airlines Holdings (UAL) had a dividend yield of 0% as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 31,
+        "anachronistic": true,
+        "name_used": "United Airlines Holdings",
+        "name_at_cutoff": "United Continental Holdings"
+      }
+    },
+    {
+      "key": "stock/tempo/45/15",
+      "label": "TEMPO",
+      "li": 45,
+      "index": 15,
+      "claim": "Jacobs Solutions (J) had a debt-to-equity ratio of 0.5 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 34,
+        "anachronistic": true,
+        "name_used": "Jacobs Solutions",
+        "name_at_cutoff": "Jacobs Engineering Group Inc."
+      }
+    },
+    {
+      "key": "stock/tempo/45/16",
+      "label": "TEMPO",
+      "li": 45,
+      "index": 16,
+      "claim": "Howmet Aerospace (HWM) had a debt-to-equity ratio of 0.6 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 35,
+        "anachronistic": true,
+        "name_used": "Howmet Aerospace",
+        "name_at_cutoff": "Arconic Inc."
+      }
+    },
+    {
+      "key": "stock/tempo/45/17",
+      "label": "TEMPO",
+      "li": 45,
+      "index": 17,
+      "claim": "United Airlines Holdings (UAL) had a debt-to-equity ratio of 0.8 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 36,
+        "anachronistic": true,
+        "name_used": "United Airlines Holdings",
+        "name_at_cutoff": "United Continental Holdings"
+      }
+    },
+    {
+      "key": "stock/tempo/46/0",
+      "label": "TEMPO",
+      "li": 46,
+      "index": 0,
+      "claim": "Kellanova (K) reported Q3 2019 revenue of $1.8 billion, representing a 3% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 39,
+        "anachronistic": true,
+        "name_used": "Kellanova",
+        "name_at_cutoff": "Kellogg Company"
+      }
+    },
+    {
+      "key": "stock/tempo/46/5",
+      "label": "TEMPO",
+      "li": 46,
+      "index": 5,
+      "claim": "Kellanova (K) reported Q3 2019 net income of $100 million, representing a 5% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 4,
+        "anachronistic": true,
+        "name_used": "Kellanova",
+        "name_at_cutoff": "Kellogg Company"
+      }
+    },
+    {
+      "key": "stock/tempo/46/10",
+      "label": "TEMPO",
+      "li": 46,
+      "index": 10,
+      "claim": "Kellanova (K) has a dividend yield of 2.5% as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 9,
+        "anachronistic": true,
+        "name_used": "Kellanova",
+        "name_at_cutoff": "Kellogg Company"
+      }
+    },
+    {
+      "key": "stock/tempo/46/15",
+      "label": "TEMPO",
+      "li": 46,
+      "index": 15,
+      "claim": "Kellanova (K) has a price-to-earnings ratio of 15.0 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 14,
+        "anachronistic": true,
+        "name_used": "Kellanova",
+        "name_at_cutoff": "Kellogg Company"
+      }
+    },
+    {
+      "key": "stock/tempo/48/1",
+      "label": "TEMPO",
+      "li": 48,
+      "index": 1,
+      "claim": "Sempra reported Q3 2019 revenue of $2.1 billion, representing a 3% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 0,
+        "anachronistic": true,
+        "name_used": "Sempra",
+        "name_at_cutoff": "Sempra Energy"
+      }
+    },
+    {
+      "key": "stock/tempo/48/6",
+      "label": "TEMPO",
+      "li": 48,
+      "index": 6,
+      "claim": "Sempra had a dividend yield of 3.5% as of October 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 5,
+        "anachronistic": true,
+        "name_used": "Sempra",
+        "name_at_cutoff": "Sempra Energy"
+      }
+    },
+    {
+      "key": "stock/tempo/48/11",
+      "label": "TEMPO",
+      "li": 48,
+      "index": 11,
+      "claim": "Sempra had a price-to-earnings ratio of 17.2 as of October 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 10,
+        "anachronistic": true,
+        "name_used": "Sempra",
+        "name_at_cutoff": "Sempra Energy"
+      }
+    },
+    {
+      "key": "stock/tempo/48/16",
+      "label": "TEMPO",
+      "li": 48,
+      "index": 16,
+      "claim": "Sempra had a debt-to-equity ratio of 1.1 as of October 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 15,
+        "anachronistic": true,
+        "name_used": "Sempra",
+        "name_at_cutoff": "Sempra Energy"
+      }
+    },
+    {
+      "key": "stock/tempo/48/21",
+      "label": "TEMPO",
+      "li": 48,
+      "index": 21,
+      "claim": "Sempra had a return on equity of 11.2% as of October 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 20,
+        "anachronistic": true,
+        "name_used": "Sempra",
+        "name_at_cutoff": "Sempra Energy"
+      }
+    },
+    {
+      "key": "stock/tempo/49/0",
+      "label": "TEMPO",
+      "li": 49,
+      "index": 0,
+      "claim": "Baker Hughes (BKR) reported Q3 2019 revenue of $2.1 billion, representing a 12% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 24,
+        "anachronistic": true,
+        "name_used": "BKR",
+        "name_at_cutoff": "BHGE"
+      }
+    },
+    {
+      "key": "stock/tempo/49/5",
+      "label": "TEMPO",
+      "li": 49,
+      "index": 5,
+      "claim": "Baker Hughes (BKR) had a debt-to-equity ratio of 0.8 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 29,
+        "anachronistic": true,
+        "name_used": "BKR",
+        "name_at_cutoff": "BHGE"
+      }
+    },
+    {
+      "key": "stock/tempo/49/10",
+      "label": "TEMPO",
+      "li": 49,
+      "index": 10,
+      "claim": "Baker Hughes (BKR) had a price-to-earnings ratio of 15 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 34,
+        "anachronistic": true,
+        "name_used": "BKR",
+        "name_at_cutoff": "BHGE"
+      }
+    },
+    {
+      "key": "stock/tempo/49/15",
+      "label": "TEMPO",
+      "li": 49,
+      "index": 15,
+      "claim": "Baker Hughes (BKR) had a dividend yield of 2.5% as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 39,
+        "anachronistic": true,
+        "name_used": "BKR",
+        "name_at_cutoff": "BHGE"
+      }
+    },
+    {
+      "key": "stock/tempo/51/0",
+      "label": "TEMPO",
+      "li": 51,
+      "index": 0,
+      "claim": "Royal Caribbean Group (RCL) reported Q3 2019 revenue of $2.1 billion, representing a 10% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 24,
+        "anachronistic": true,
+        "name_used": "Royal Caribbean Group",
+        "name_at_cutoff": "Royal Caribbean Cruises Ltd."
+      }
+    },
+    {
+      "key": "stock/tempo/51/5",
+      "label": "TEMPO",
+      "li": 51,
+      "index": 5,
+      "claim": "Royal Caribbean Group (RCL) has a debt-to-equity ratio of 1.2 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 29,
+        "anachronistic": true,
+        "name_used": "Royal Caribbean Group",
+        "name_at_cutoff": "Royal Caribbean Cruises Ltd."
+      }
+    },
+    {
+      "key": "stock/tempo/51/10",
+      "label": "TEMPO",
+      "li": 51,
+      "index": 10,
+      "claim": "Royal Caribbean Group (RCL) has a price-to-earnings ratio of 15 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 34,
+        "anachronistic": true,
+        "name_used": "Royal Caribbean Group",
+        "name_at_cutoff": "Royal Caribbean Cruises Ltd."
+      }
+    },
+    {
+      "key": "stock/tempo/51/15",
+      "label": "TEMPO",
+      "li": 51,
+      "index": 15,
+      "claim": "Royal Caribbean Group (RCL) has a return on equity of 10% as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 39,
+        "anachronistic": true,
+        "name_used": "Royal Caribbean Group",
+        "name_at_cutoff": "Royal Caribbean Cruises Ltd."
+      }
+    },
+    {
+      "key": "stock/tempo/57/4",
+      "label": "TEMPO",
+      "li": 57,
+      "index": 4,
+      "claim": "TT reported Q3 2019 revenue of $1.5 billion, representing a 6% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 8,
+        "anachronistic": true,
+        "name_used": "TT",
+        "name_at_cutoff": "IR"
+      }
+    },
+    {
+      "key": "stock/tempo/57/5",
+      "label": "TEMPO",
+      "li": 57,
+      "index": 5,
+      "claim": "TT reported Q3 2019 net income of $200 million, representing a 8% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 9,
+        "anachronistic": true,
+        "name_used": "TT",
+        "name_at_cutoff": "IR"
+      }
+    },
+    {
+      "key": "stock/tempo/57/12",
+      "label": "TEMPO",
+      "li": 57,
+      "index": 12,
+      "claim": "TT has a historical average annual stock return of 14% over the past 5 years.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 16,
+        "anachronistic": true,
+        "name_used": "TT",
+        "name_at_cutoff": "IR"
+      }
+    },
+    {
+      "key": "stock/tempo/57/17",
+      "label": "TEMPO",
+      "li": 57,
+      "index": 17,
+      "claim": "TT has a P/E ratio of 22 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 21,
+        "anachronistic": true,
+        "name_used": "TT",
+        "name_at_cutoff": "IR"
+      }
+    },
+    {
+      "key": "stock/tempo/57/22",
+      "label": "TEMPO",
+      "li": 57,
+      "index": 22,
+      "claim": "TT has a dividend yield of 2.5% as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 26,
+        "anachronistic": true,
+        "name_used": "TT",
+        "name_at_cutoff": "IR"
+      }
+    },
+    {
+      "key": "stock/tempo/59/3",
+      "label": "TEMPO",
+      "li": 59,
+      "index": 3,
+      "claim": "Healthpeak Properties (DOC) reported Q3 2019 revenue of $600 million, representing a 4% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 12,
+        "anachronistic": true,
+        "name_used": "DOC",
+        "name_at_cutoff": "PEAK"
+      }
+    },
+    {
+      "key": "stock/tempo/59/8",
+      "label": "TEMPO",
+      "li": 59,
+      "index": 8,
+      "claim": "Healthpeak Properties (DOC) has a dividend yield of 2.8% as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 17,
+        "anachronistic": true,
+        "name_used": "DOC",
+        "name_at_cutoff": "PEAK"
+      }
+    },
+    {
+      "key": "stock/tempo/59/13",
+      "label": "TEMPO",
+      "li": 59,
+      "index": 13,
+      "claim": "Healthpeak Properties (DOC) has a price-to-earnings ratio of 14 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 22,
+        "anachronistic": true,
+        "name_used": "DOC",
+        "name_at_cutoff": "PEAK"
+      }
+    },
+    {
+      "key": "stock/tempo/59/18",
+      "label": "TEMPO",
+      "li": 59,
+      "index": 18,
+      "claim": "Healthpeak Properties (DOC) has a debt-to-equity ratio of 0.5 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 27,
+        "anachronistic": true,
+        "name_used": "DOC",
+        "name_at_cutoff": "PEAK"
+      }
+    },
+    {
+      "key": "stock/tempo/60/3",
+      "label": "TEMPO",
+      "li": 60,
+      "index": 3,
+      "claim": "Meta Platforms (META) reported Q3 2019 revenue of $17.8 billion, representing a 23% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 32,
+        "anachronistic": true,
+        "name_used": "Meta Platforms (META)",
+        "name_at_cutoff": "Facebook (FB)"
+      }
+    },
+    {
+      "key": "stock/tempo/60/8",
+      "label": "TEMPO",
+      "li": 60,
+      "index": 8,
+      "claim": "Meta Platforms (META) had a price-to-earnings ratio of 22.1 as of October 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 37,
+        "anachronistic": true,
+        "name_used": "Meta Platforms (META)",
+        "name_at_cutoff": "Facebook (FB)"
+      }
+    },
+    {
+      "key": "stock/tempo/60/13",
+      "label": "TEMPO",
+      "li": 60,
+      "index": 13,
+      "claim": "Meta Platforms (META) had a dividend yield of 0.0% as of October 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 2,
+        "anachronistic": true,
+        "name_used": "Meta Platforms (META)",
+        "name_at_cutoff": "Facebook (FB)"
+      }
+    },
+    {
+      "key": "stock/tempo/60/18",
+      "label": "TEMPO",
+      "li": 60,
+      "index": 18,
+      "claim": "Meta Platforms (META) had a debt-to-equity ratio of 0.1 as of October 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 7,
+        "anachronistic": true,
+        "name_used": "Meta Platforms (META)",
+        "name_at_cutoff": "Facebook (FB)"
+      }
+    },
+    {
+      "key": "stock/tempo/62/0",
+      "label": "TEMPO",
+      "li": 62,
+      "index": 0,
+      "claim": "Warner Bros. Discovery (WBD) was formed in 2019 through the merger of WarnerMedia and Discovery, Inc., with the merger completing on April 8, 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 29,
+        "anachronistic": true,
+        "name_used": "Warner Bros. Discovery (WBD)",
+        "name_at_cutoff": "Discovery, Inc. (DISCA)"
+      }
+    },
+    {
+      "key": "stock/tempo/62/9",
+      "label": "TEMPO",
+      "li": 62,
+      "index": 9,
+      "claim": "Warner Bros. Discovery (WBD) had a market capitalization of $50 billion as of April 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 38,
+        "anachronistic": true,
+        "name_used": "Warner Bros. Discovery (WBD)",
+        "name_at_cutoff": "Discovery, Inc. (DISCA)"
+      }
+    },
+    {
+      "key": "stock/tempo/62/14",
+      "label": "TEMPO",
+      "li": 62,
+      "index": 14,
+      "claim": "Warner Bros. Discovery (WBD) had a debt-to-equity ratio of 1.0 as of April 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 3,
+        "anachronistic": true,
+        "name_used": "Warner Bros. Discovery (WBD)",
+        "name_at_cutoff": "Discovery, Inc. (DISCA)"
+      }
+    },
+    {
+      "key": "stock/tempo/62/19",
+      "label": "TEMPO",
+      "li": 62,
+      "index": 19,
+      "claim": "Warner Bros. Discovery (WBD) had a price-to-earnings ratio of 18 as of April 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 8,
+        "anachronistic": true,
+        "name_used": "Warner Bros. Discovery (WBD)",
+        "name_at_cutoff": "Discovery, Inc. (DISCA)"
+      }
+    },
+    {
+      "key": "stock/tempo/63/0",
+      "label": "TEMPO",
+      "li": 63,
+      "index": 0,
+      "claim": "Campbell's Company (CPB) reported Q3 2019 revenue of $2.1 billion, representing a 2% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": true,
+      "verdict": {
+        "index": 9,
+        "anachronistic": true,
+        "name_used": "Campbell's Company",
+        "name_at_cutoff": "Campbell Soup Company"
+      }
+    },
+    {
+      "key": "stock/tempo/63/5",
+      "label": "TEMPO",
+      "li": 63,
+      "index": 5,
+      "claim": "Campbell's Company (CPB) had a dividend yield of 3.2% as of October 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 14,
+        "anachronistic": true,
+        "name_used": "Campbell's Company",
+        "name_at_cutoff": "Campbell Soup Company"
+      }
+    },
+    {
+      "key": "stock/tempo/63/10",
+      "label": "TEMPO",
+      "li": 63,
+      "index": 10,
+      "claim": "Campbell's Company (CPB) had a price-to-earnings ratio of 15.2 as of October 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 19,
+        "anachronistic": true,
+        "name_used": "Campbell's Company",
+        "name_at_cutoff": "Campbell Soup Company"
+      }
+    },
+    {
+      "key": "stock/tempo/63/15",
+      "label": "TEMPO",
+      "li": 63,
+      "index": 15,
+      "claim": "Campbell's Company (CPB) had a debt-to-equity ratio of 0.8 as of October 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 24,
+        "anachronistic": true,
+        "name_used": "Campbell's Company",
+        "name_at_cutoff": "Campbell Soup Company"
+      }
+    },
+    {
+      "key": "stock/tempo/64/4",
+      "label": "TEMPO",
+      "li": 64,
+      "index": 4,
+      "claim": "Gen Digital (GEN) reported Q3 2019 revenue of $1.1 billion, representing a 5% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 33,
+        "anachronistic": true,
+        "name_used": "Gen Digital (GEN)",
+        "name_at_cutoff": "NortonLifeLock (NLOK)"
+      }
+    },
+    {
+      "key": "stock/tempo/64/9",
+      "label": "TEMPO",
+      "li": 64,
+      "index": 9,
+      "claim": "Gen Digital (GEN) had a price-to-earnings ratio of 12.3 as of October 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 38,
+        "anachronistic": true,
+        "name_used": "Gen Digital (GEN)",
+        "name_at_cutoff": "NortonLifeLock (NLOK)"
+      }
+    },
+    {
+      "key": "stock/tempo/64/14",
+      "label": "TEMPO",
+      "li": 64,
+      "index": 14,
+      "claim": "Gen Digital (GEN) had a market capitalization of $10.2 billion as of October 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 3,
+        "anachronistic": true,
+        "name_used": "Gen Digital (GEN)",
+        "name_at_cutoff": "Symantec (SYMC) / NortonLifeLock (NLOK)"
+      }
+    },
+    {
+      "key": "stock/tempo/68/2",
+      "label": "TEMPO",
+      "li": 68,
+      "index": 2,
+      "claim": "Revvity (RVTY) reported Q3 2019 revenue of $1.1 billion, representing a 7.5% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 26,
+        "anachronistic": true,
+        "name_used": "Revvity (RVTY)",
+        "name_at_cutoff": "PerkinElmer (PKI)"
+      }
+    },
+    {
+      "key": "stock/tempo/68/3",
+      "label": "TEMPO",
+      "li": 68,
+      "index": 3,
+      "claim": "Revvity (RVTY) reported Q3 2019 net income of $0.1 billion, representing a 10.2% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 27,
+        "anachronistic": true,
+        "name_used": "Revvity (RVTY)",
+        "name_at_cutoff": "PerkinElmer (PKI)"
+      }
+    },
+    {
+      "key": "stock/tempo/68/11",
+      "label": "TEMPO",
+      "li": 68,
+      "index": 11,
+      "claim": "Revvity (RVTY) has a market capitalization of $10 billion as of October 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 35,
+        "anachronistic": true,
+        "name_used": "Revvity (RVTY)",
+        "name_at_cutoff": "PerkinElmer (PKI)"
+      }
+    },
+    {
+      "key": "stock/tempo/68/16",
+      "label": "TEMPO",
+      "li": 68,
+      "index": 16,
+      "claim": "Revvity (RVTY) has a price-to-earnings ratio of 20 as of October 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 0,
+        "anachronistic": true,
+        "name_used": "Revvity (RVTY)",
+        "name_at_cutoff": "PerkinElmer (PKI)"
+      }
+    },
+    {
+      "key": "stock/tempo/68/21",
+      "label": "TEMPO",
+      "li": 68,
+      "index": 21,
+      "claim": "Revvity (RVTY) has a dividend yield of 2% as of October 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 5,
+        "anachronistic": true,
+        "name_used": "Revvity (RVTY)",
+        "name_at_cutoff": "PerkinElmer (PKI)"
+      }
+    },
+    {
+      "key": "stock/tempo/70/3",
+      "label": "TEMPO",
+      "li": 70,
+      "index": 3,
+      "claim": "Ball Corporation (BALL) reported Q3 2019 revenue of $1.5 billion, representing a 4% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 32,
+        "anachronistic": true,
+        "name_used": "Ball Corporation (BALL)",
+        "name_at_cutoff": "Ball Corporation (BLL)"
+      }
+    },
+    {
+      "key": "stock/tempo/70/8",
+      "label": "TEMPO",
+      "li": 70,
+      "index": 8,
+      "claim": "Ball Corporation (BALL) has a debt-to-equity ratio of 0.7 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 37,
+        "anachronistic": true,
+        "name_used": "Ball Corporation (BALL)",
+        "name_at_cutoff": "Ball Corporation (BLL)"
+      }
+    },
+    {
+      "key": "stock/tempo/70/13",
+      "label": "TEMPO",
+      "li": 70,
+      "index": 13,
+      "claim": "Ball Corporation (BALL) has a price-to-earnings ratio of 14 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 2,
+        "anachronistic": true,
+        "name_used": "Ball Corporation (BALL)",
+        "name_at_cutoff": "Ball Corporation (BLL)"
+      }
+    },
+    {
+      "key": "stock/tempo/70/18",
+      "label": "TEMPO",
+      "li": 70,
+      "index": 18,
+      "claim": "Ball Corporation (BALL) has a dividend yield of 2% as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 7,
+        "anachronistic": true,
+        "name_used": "Ball Corporation (BALL)",
+        "name_at_cutoff": "Ball Corporation (BLL)"
+      }
+    },
+    {
+      "key": "stock/tempo/71/2",
+      "label": "TEMPO",
+      "li": 71,
+      "index": 2,
+      "claim": "Healthpeak Properties (DOC) reported a revenue of $1.0 billion for the quarter ending September 30, 2019, with a year-over-year growth of 10%.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 11,
+        "anachronistic": true,
+        "name_used": "Healthpeak Properties (DOC)",
+        "name_at_cutoff": "Healthpeak Properties (PEAK)"
+      }
+    },
+    {
+      "key": "stock/tempo/71/7",
+      "label": "TEMPO",
+      "li": 71,
+      "index": 7,
+      "claim": "Healthpeak Properties (DOC) has a dividend yield of 3.0% as of October 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 16,
+        "anachronistic": true,
+        "name_used": "Healthpeak Properties (DOC)",
+        "name_at_cutoff": "Healthpeak Properties (PEAK)"
+      }
+    },
+    {
+      "key": "stock/tempo/71/12",
+      "label": "TEMPO",
+      "li": 71,
+      "index": 12,
+      "claim": "Healthpeak Properties (DOC) has a price-to-earnings ratio of 16 as of October 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 21,
+        "anachronistic": true,
+        "name_used": "Healthpeak Properties (DOC)",
+        "name_at_cutoff": "Healthpeak Properties (PEAK)"
+      }
+    },
+    {
+      "key": "stock/tempo/71/17",
+      "label": "TEMPO",
+      "li": 71,
+      "index": 17,
+      "claim": "Healthpeak Properties (DOC) has a debt-to-equity ratio of 0.6 as of October 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 26,
+        "anachronistic": true,
+        "name_used": "Healthpeak Properties (DOC)",
+        "name_at_cutoff": "Healthpeak Properties (PEAK)"
+      }
+    },
+    {
+      "key": "stock/tempo/72/0",
+      "label": "TEMPO",
+      "li": 72,
+      "index": 0,
+      "claim": "Fiserv (FI) reported Q3 2019 revenue of $1.2 billion, representing a 12% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 29,
+        "anachronistic": true,
+        "name_used": "Fiserv (FI)",
+        "name_at_cutoff": "Fiserv (FISV)"
+      }
+    },
+    {
+      "key": "stock/tempo/72/5",
+      "label": "TEMPO",
+      "li": 72,
+      "index": 5,
+      "claim": "Fiserv (FI) had a price-to-earnings (P/E) ratio of 25x as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 34,
+        "anachronistic": true,
+        "name_used": "Fiserv (FI)",
+        "name_at_cutoff": "Fiserv (FISV)"
+      }
+    },
+    {
+      "key": "stock/tempo/72/10",
+      "label": "TEMPO",
+      "li": 72,
+      "index": 10,
+      "claim": "Fiserv (FI) had a dividend yield of 1.5% as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 39,
+        "anachronistic": true,
+        "name_used": "Fiserv (FI)",
+        "name_at_cutoff": "Fiserv (FISV)"
+      }
+    },
+    {
+      "key": "stock/tempo/72/13",
+      "label": "TEMPO",
+      "li": 72,
+      "index": 13,
+      "claim": "Marsh McLennan (MMC) had a dividend yield of 2.0% as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 2,
+        "anachronistic": true,
+        "name_used": "Marsh McLennan",
+        "name_at_cutoff": "Marsh & McLennan Companies"
+      }
+    },
+    {
+      "key": "stock/tempo/72/15",
+      "label": "TEMPO",
+      "li": 72,
+      "index": 15,
+      "claim": "Fiserv (FI) had a return on equity (ROE) of 15% as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 4,
+        "anachronistic": true,
+        "name_used": "FI",
+        "name_at_cutoff": "FISV"
+      }
+    },
+    {
+      "key": "stock/tempo/72/18",
+      "label": "TEMPO",
+      "li": 72,
+      "index": 18,
+      "claim": "Marsh McLennan (MMC) had a return on equity (ROE) of 14% as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 7,
+        "anachronistic": true,
+        "name_used": "Marsh McLennan",
+        "name_at_cutoff": "Marsh & McLennan Companies"
+      }
+    },
+    {
+      "key": "stock/tempo/73/3",
+      "label": "TEMPO",
+      "li": 73,
+      "index": 3,
+      "claim": "Coterra (CTRA) reported Q3 2019 revenue of $0.8 billion, representing a 15% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 12,
+        "anachronistic": true,
+        "name_used": "Coterra (CTRA)",
+        "name_at_cutoff": "Cabot Oil & Gas (COG)"
+      }
+    },
+    {
+      "key": "stock/tempo/73/8",
+      "label": "TEMPO",
+      "li": 73,
+      "index": 8,
+      "claim": "Coterra (CTRA) had a debt-to-equity ratio of 0.55 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 17,
+        "anachronistic": true,
+        "name_used": "Coterra (CTRA)",
+        "name_at_cutoff": "Cabot Oil & Gas (COG)"
+      }
+    },
+    {
+      "key": "stock/tempo/73/13",
+      "label": "TEMPO",
+      "li": 73,
+      "index": 13,
+      "claim": "Coterra (CTRA) had a return on equity (ROE) of 8% as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 22,
+        "anachronistic": true,
+        "name_used": "Coterra (CTRA)",
+        "name_at_cutoff": "Cabot Oil & Gas (COG)"
+      }
+    },
+    {
+      "key": "stock/tempo/73/18",
+      "label": "TEMPO",
+      "li": 73,
+      "index": 18,
+      "claim": "Coterra (CTRA) had a price-to-earnings (P/E) ratio of 18 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 27,
+        "anachronistic": true,
+        "name_used": "Coterra (CTRA)",
+        "name_at_cutoff": "Cabot Oil & Gas (COG)"
+      }
+    },
+    {
+      "key": "stock/tempo/79/0",
+      "label": "TEMPO",
+      "li": 79,
+      "index": 0,
+      "claim": "Molson Coors Beverage Company (TAP) reported Q3 2019 revenue of $1.2 billion, representing a 3% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 9,
+        "anachronistic": true,
+        "name_used": "Molson Coors Beverage Company",
+        "name_at_cutoff": "Molson Coors Brewing Company"
+      }
+    },
+    {
+      "key": "stock/tempo/79/5",
+      "label": "TEMPO",
+      "li": 79,
+      "index": 5,
+      "claim": "Molson Coors Beverage Company (TAP) had a dividend yield of 3.2% as of October 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 14,
+        "anachronistic": true,
+        "name_used": "Molson Coors Beverage Company",
+        "name_at_cutoff": "Molson Coors Brewing Company"
+      }
+    },
+    {
+      "key": "stock/tempo/79/10",
+      "label": "TEMPO",
+      "li": 79,
+      "index": 10,
+      "claim": "Molson Coors Beverage Company (TAP) had a price-to-earnings ratio of 15.2 as of October 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 19,
+        "anachronistic": true,
+        "name_used": "Molson Coors Beverage Company",
+        "name_at_cutoff": "Molson Coors Brewing Company"
+      }
+    },
+    {
+      "key": "stock/tempo/79/15",
+      "label": "TEMPO",
+      "li": 79,
+      "index": 15,
+      "claim": "Molson Coors Beverage Company (TAP) had a debt-to-equity ratio of 0.8 as of October 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 24,
+        "anachronistic": true,
+        "name_used": "Molson Coors Beverage Company",
+        "name_at_cutoff": "Molson Coors Brewing Company"
+      }
+    },
+    {
+      "key": "stock/tempo/83/1",
+      "label": "TEMPO",
+      "li": 83,
+      "index": 1,
+      "claim": "Crown Castle (CCI) reported Q3 2019 revenue of $1.1 billion, representing a 5% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 10,
+        "anachronistic": true,
+        "name_used": "Crown Castle",
+        "name_at_cutoff": "Crown Castle International"
+      }
+    },
+    {
+      "key": "stock/tempo/83/6",
+      "label": "TEMPO",
+      "li": 83,
+      "index": 6,
+      "claim": "Crown Castle (CCI) had a price-to-earnings ratio of 20.1 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 15,
+        "anachronistic": true,
+        "name_used": "Crown Castle",
+        "name_at_cutoff": "Crown Castle International"
+      }
+    },
+    {
+      "key": "stock/tempo/83/11",
+      "label": "TEMPO",
+      "li": 83,
+      "index": 11,
+      "claim": "Crown Castle (CCI) had a dividend yield of 5.1% as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 20,
+        "anachronistic": true,
+        "name_used": "Crown Castle",
+        "name_at_cutoff": "Crown Castle International"
+      }
+    },
+    {
+      "key": "stock/tempo/83/16",
+      "label": "TEMPO",
+      "li": 83,
+      "index": 16,
+      "claim": "Crown Castle (CCI) had a debt-to-equity ratio of 1.2 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 25,
+        "anachronistic": true,
+        "name_used": "Crown Castle",
+        "name_at_cutoff": "Crown Castle International"
+      }
+    },
+    {
+      "key": "stock/tempo/84/2",
+      "label": "TEMPO",
+      "li": 84,
+      "index": 2,
+      "claim": "Old Dominion (ODFL) reported Q3 2019 revenue of $1.0 billion, representing a 9% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 31,
+        "anachronistic": true,
+        "name_used": "Old Dominion",
+        "name_at_cutoff": "Old Dominion Freight Line"
+      }
+    },
+    {
+      "key": "stock/tempo/84/7",
+      "label": "TEMPO",
+      "li": 84,
+      "index": 7,
+      "claim": "Old Dominion (ODFL) had a price-to-earnings ratio of 16.5 as of October 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 36,
+        "anachronistic": true,
+        "name_used": "Old Dominion",
+        "name_at_cutoff": "Old Dominion Freight Line"
+      }
+    },
+    {
+      "key": "stock/tempo/86/2",
+      "label": "TEMPO",
+      "li": 86,
+      "index": 2,
+      "claim": "Vistra Corp. reported Q3 2019 revenue of $1.0 billion, representing a 2% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 31,
+        "anachronistic": true,
+        "name_used": "Vistra Corp.",
+        "name_at_cutoff": "Vistra Energy Corp."
+      }
+    },
+    {
+      "key": "stock/tempo/86/7",
+      "label": "TEMPO",
+      "li": 86,
+      "index": 7,
+      "claim": "Vistra Corp. had a debt-to-equity ratio of 1.0 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 36,
+        "anachronistic": true,
+        "name_used": "Vistra Corp.",
+        "name_at_cutoff": "Vistra Energy Corp."
+      }
+    },
+    {
+      "key": "stock/tempo/86/12",
+      "label": "TEMPO",
+      "li": 86,
+      "index": 12,
+      "claim": "Vistra Corp. had a dividend yield of 2.9% as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 1,
+        "anachronistic": true,
+        "name_used": "Vistra Corp.",
+        "name_at_cutoff": "Vistra Energy Corp."
+      }
+    },
+    {
+      "key": "stock/tempo/86/17",
+      "label": "TEMPO",
+      "li": 86,
+      "index": 17,
+      "claim": "Vistra Corp. had a price-to-earnings ratio of 13.0 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 6,
+        "anachronistic": true,
+        "name_used": "Vistra Corp.",
+        "name_at_cutoff": "Vistra Energy Corp."
+      }
+    },
+    {
+      "key": "stock/tempo/87/4",
+      "label": "TEMPO",
+      "li": 87,
+      "index": 4,
+      "claim": "Baker Hughes (BKR) reported Q3 2019 revenue of $3.2 billion, representing a 10% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 13,
+        "anachronistic": true,
+        "name_used": "Baker Hughes (BKR)",
+        "name_at_cutoff": "Baker Hughes a GE Co (BHGE)"
+      }
+    },
+    {
+      "key": "stock/tempo/87/9",
+      "label": "TEMPO",
+      "li": 87,
+      "index": 9,
+      "claim": "Baker Hughes (BKR) has a dividend yield of 2.8% as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 18,
+        "anachronistic": true,
+        "name_used": "Baker Hughes (BKR)",
+        "name_at_cutoff": "Baker Hughes a GE Co (BHGE)"
+      }
+    },
+    {
+      "key": "stock/tempo/87/14",
+      "label": "TEMPO",
+      "li": 87,
+      "index": 14,
+      "claim": "Baker Hughes (BKR) has a debt-to-equity ratio of 0.40 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 23,
+        "anachronistic": true,
+        "name_used": "Baker Hughes (BKR)",
+        "name_at_cutoff": "Baker Hughes a GE Co (BHGE)"
+      }
+    },
+    {
+      "key": "stock/tempo/87/19",
+      "label": "TEMPO",
+      "li": 87,
+      "index": 19,
+      "claim": "Baker Hughes (BKR) has a price-to-earnings ratio of 13.8 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 28,
+        "anachronistic": true,
+        "name_used": "Baker Hughes (BKR)",
+        "name_at_cutoff": "Baker Hughes a GE Co (BHGE)"
+      }
+    },
+    {
+      "key": "stock/tempo/92/0",
+      "label": "TEMPO",
+      "li": 92,
+      "index": 0,
+      "claim": "Crown Castle (CCI) reported Q3 2019 revenue of $1.1 billion, representing a 12% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 19,
+        "anachronistic": true,
+        "name_used": "Crown Castle",
+        "name_at_cutoff": "Crown Castle International"
+      }
+    },
+    {
+      "key": "stock/tempo/92/5",
+      "label": "TEMPO",
+      "li": 92,
+      "index": 5,
+      "claim": "Crown Castle (CCI) has a debt-to-equity ratio of 1.2 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 24,
+        "anachronistic": true,
+        "name_used": "Crown Castle",
+        "name_at_cutoff": "Crown Castle International"
+      }
+    },
+    {
+      "key": "stock/tempo/92/10",
+      "label": "TEMPO",
+      "li": 92,
+      "index": 10,
+      "claim": "Crown Castle (CCI) has a dividend yield of 5.5% as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 29,
+        "anachronistic": true,
+        "name_used": "Crown Castle",
+        "name_at_cutoff": "Crown Castle International"
+      }
+    },
+    {
+      "key": "stock/tempo/92/15",
+      "label": "TEMPO",
+      "li": 92,
+      "index": 15,
+      "claim": "Crown Castle (CCI) has a price-to-earnings ratio of 15 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 34,
+        "anachronistic": true,
+        "name_used": "Crown Castle",
+        "name_at_cutoff": "Crown Castle International"
+      }
+    },
+    {
+      "key": "stock/tempo/96/4",
+      "label": "TEMPO",
+      "li": 96,
+      "index": 4,
+      "claim": "Paramount Skydance Corporation (PSKY) reported Q3 2019 revenue of $0.8 billion, representing a 2% year-over-year increase.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 23,
+        "anachronistic": true,
+        "name_used": "Paramount Skydance Corporation (PSKY)",
+        "name_at_cutoff": "ViacomCBS (VIAC)"
+      }
+    },
+    {
+      "key": "stock/tempo/96/9",
+      "label": "TEMPO",
+      "li": 96,
+      "index": 9,
+      "claim": "Paramount Skydance Corporation (PSKY) had a P/E ratio of 14.8 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 28,
+        "anachronistic": true,
+        "name_used": "Paramount Skydance Corporation (PSKY)",
+        "name_at_cutoff": "ViacomCBS (VIAC)"
+      }
+    },
+    {
+      "key": "stock/tempo/96/14",
+      "label": "TEMPO",
+      "li": 96,
+      "index": 14,
+      "claim": "Paramount Skydance Corporation (PSKY) had a dividend yield of 1.8% as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 33,
+        "anachronistic": true,
+        "name_used": "Paramount Skydance Corporation (PSKY)",
+        "name_at_cutoff": "ViacomCBS (VIAC)"
+      }
+    },
+    {
+      "key": "stock/tempo/96/19",
+      "label": "TEMPO",
+      "li": 96,
+      "index": 19,
+      "claim": "Paramount Skydance Corporation (PSKY) had a debt-to-equity ratio of 1.0 as of Q3 2019.",
+      "cutoff": "2019-12-01",
+      "gemini_leaked": false,
+      "verdict": {
+        "index": 38,
+        "anachronistic": true,
+        "name_used": "Paramount Skydance Corporation (PSKY)",
+        "name_at_cutoff": "ViacomCBS (VIAC)"
+      }
+    }
+  ],
+  "cost_usd": 0.9411
+}

@@ -1,0 +1,14 @@
+{
+  "0.05": {
+    "tempo_below_hint": 1.0,
+    "tempo_below_rag": 1.0
+  },
+  "0.1": {
+    "tempo_below_hint": 1.0,
+    "tempo_below_rag": 1.0
+  },
+  "0.2": {
+    "tempo_below_hint": 1.0,
+    "tempo_below_rag": 0.985
+  }
+}

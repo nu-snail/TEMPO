@@ -1,48 +1,9 @@
-# Environment and secrets
 .env
-**/.env
 .venv/
-.python-version
-
-# Python
 __pycache__/
 *.pyc
-*.pyo
-*.egg-info/
-*.egg
-dist/
-build/
-
-# Lock file (large, reproducible from pyproject.toml)
-uv.lock
-
-# Results and runtime artifacts (large, not needed for reproduction)
-results/
-**/runtime/
-**/temp/
-**/cache/
-
-# Paper writing (separate from code release)
-PaperWriting/
-
-# Large EMNLP archive only; the train/evaluation/control splits are tracked
-dataset/emnlp2026/
-
-# Experiment plan and summary docs
-EXPERIMENT_PLAN.md
-SUMMARY.md
-
-# IDE and OS
-.cursor/
-.vscode/
-.idea/
-*.swp
-*.swo
-.DS_Store
-Thumbs.db
-
-# Jupyter
-.ipynb_checkpoints/
-
-# Test result JSON files
-tests/*.json
+runtime/
+results/*/train_*/
+results/*/eval_*_best/
+results/*/eval_*_final/
+*.log
